@@ -1,3 +1,11 @@
 FONTS
 
 font-family: 'Heebo', sans-serif;
+font-family: 'Epilogue', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Sora', sans-serif;
+
+COLOURS
+
+pale blue: #A7CDE0;

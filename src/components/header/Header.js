@@ -1,0 +1,89 @@
+import React from 'react'
+import { motion } from 'framer-motion'
+import '../header/style.css'
+
+
+const Header = ({text, text2}) => {
+
+    const container = {
+        initial: {
+            x: 0,
+            opacity:0
+
+          },
+          animation: {
+            y: 0,
+            opacity:1,
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        };
+      
+      const item = {
+        initial: {
+            x: 80,
+            opacity:0  
+          },
+          animation: {
+            x: 0,
+            opacity:1,
+
+            transition: {
+              duration: 1.2,
+              type: "tween",
+              ease: "easeInOut",
+            },
+          },
+        };
+
+      const item2 = {
+        initial: {
+            y: -80,
+            opacity:0  
+          },
+          animation: {
+            y: 0,
+            opacity:1,
+
+            transition: {
+              duration: 1.2,
+              type: "tween",
+              ease: "easeInOut",
+            },
+          },
+        };
+
+
+
+  return (
+    <>
+        <motion.div
+            className='header-container'
+            variants={container}
+            initial='initial'
+            animate='animation'
+            >
+
+            <motion.h1 
+                className='header-text'
+                variants={item}
+                >
+                {text}
+            </motion.h1>
+            
+            <motion.h1 
+                className='header-text2'
+                variants={item2}
+                >
+                    {text2}
+            </motion.h1>
+         
+          
+        </motion.div>
+    
+    </>
+  )
+}
+
+export default Header

@@ -1,0 +1,31 @@
+.header-container{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding:1em
+}
+
+
+.header-text{
+    font-family: 'Sora', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.6em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #121212;
+    white-space: none; 
+    
+}
+
+
+.header-text2{
+    font-family: 'Sora', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.6em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #121212;
+    white-space: none; 
+}
+

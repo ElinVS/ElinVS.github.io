@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 
-.navbar-right{
+.navbar-right , .navbar-left{
     display: flex;
     flex-flow: wrap;
     justify-content: right;
@@ -22,18 +22,12 @@
 
 .navbar-links{
     color: #121212;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
     list-style: none;
     text-decoration: none;
 }
 
-#home-link{
-    color:#121212;
-    font-size: 1.5em;
-    font-family: 'Heebo', sans-serif;
-    text-transform: uppercase;
-    list-style: none;
-    text-decoration: none;
-}
+
