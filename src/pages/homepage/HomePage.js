@@ -1,12 +1,14 @@
 import React from 'react'
 import '../homepage/style.css'
 import Header from '../../components/header/Header'
+import About from '../../components/about/About'
 
-const HomePage = ({text, text2, text3}) => {
+const HomePage = ({text}) => {
   return (
     <>
       <section className='home-page'>
-        <Header text="elin  " text2="svennberg" />
+        <Header text="elin svennberg "  />
+        <About/>
       </section>
     </>
   )

@@ -1,0 +1,29 @@
+.about-page{
+    min-height: 20vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+.about-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:800px;
+    height:300px;
+
+}
+
+.about-container > p {
+    color: #121212;
+    font-size: 1.2rem;
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; 
+
+}
+
+

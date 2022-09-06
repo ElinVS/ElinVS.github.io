@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../header/style.css'
+import '../about/style.css'
+import { AboutData } from './AboutData'
 
-
-const Header = ({text, text2}) => {
+const About = () => {
 
     const container = {
         initial: {
@@ -22,7 +22,7 @@ const Header = ({text, text2}) => {
       
       const item = {
         initial: {
-            x: -80,
+            x: 80,
             opacity:0  
           },
           animation: {
@@ -39,29 +39,40 @@ const Header = ({text, text2}) => {
 
 
 
-
-
   return (
     <>
-        <motion.div
-            className='header-container'
+
+    <section className='about-page'>
+     
+        <motion.div 
+            className='about-container'
             variants={container}
             initial='initial'
             animate='animation'
             >
+                
+            <motion.p
+                variants={item}>
+                01/
 
-            <motion.h1 
-                className='header-text'
-                variants={item}
-                >
-                {text}
-            </motion.h1>
+            </motion.p>
+            <motion.p
+                variants={item}>
+                {AboutData.intro}
+                
+            </motion.p>
+            <motion.p
+                variants={item}>
+            {AboutData.interest}
 
-          
+            </motion.p>
+
         </motion.div>
+
+    </section>
     
     </>
   )
 }
 
-export default Header
+export default About
