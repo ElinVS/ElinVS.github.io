@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Message from './components/message/Message';
 
 function App() {
+  
   return (
-    <div className="App">
-
-      Portfolio coming soon...
-
-    </div>
+    <>
+      <Message/>
+    </>
   );
 }
 
