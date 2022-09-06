@@ -1,8 +1,8 @@
 .about-page{
-    min-height: 20vh;
+    min-height: 60vh;
     display:flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     padding: 1em;
     
 }

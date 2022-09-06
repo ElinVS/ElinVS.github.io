@@ -22,11 +22,11 @@ const Header = ({text, text2}) => {
       
       const item = {
         initial: {
-            x: -80,
+            y: 80,
             opacity:0  
           },
           animation: {
-            x: 0,
+            y: 0,
             opacity:1,
 
             transition: {

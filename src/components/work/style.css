@@ -1,0 +1,51 @@
+.work-page{
+    min-height:100vh;
+    padding: 1em;
+    
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+   
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 5; 
+        background-color: rgb(225, 220, 213);
+        
+    }
+    .div2 { 
+        grid-area: 1 / 5 / 5 / 9; 
+        background-color: rgb(225, 220, 213);
+       
+    }
+    .div3 { 
+        grid-area: 5 / 1 / 9 / 5;
+        background-color: rgb(225, 220, 213);
+        
+    }
+    .div4 { 
+        grid-area: 5 / 5 / 9 / 9;
+        background-color: rgb(225, 220, 213);
+        
+    }
+
+ .work-page > h1 {
+    color:  #121212;
+    font-size: 3rem;
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+.grid-wrapper > .div1 > h1 {
+
+    color:  #121212;
+    font-size: 3rem;
+    font-family: 'Heebo', sans-serif;
+
+}
+

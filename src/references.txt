@@ -9,3 +9,4 @@ font-family: 'Sora', sans-serif;
 COLOURS
 
 pale blue: #A7CDE0;
+beautiful orange red: #CA5E48

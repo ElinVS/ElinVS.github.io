@@ -4,7 +4,7 @@
     flex-flow: wrap;
     justify-content: flex-start;
     align-items: flex-end; 
-    padding:2em;
+    padding:1em;
     
 }
 
@@ -21,13 +21,5 @@
 }
 
 
-.header-text2{
-    font-family: 'Sora', sans-serif;
-    font-size: 4rem;
-    letter-spacing: 0.6em;
-    font-weight: 100;
-    text-transform: uppercase;
-    color: #121212;
-    white-space: none; 
-}
+
 

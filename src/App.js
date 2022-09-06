@@ -4,6 +4,7 @@ import './App.css';
 
 import Navbar from './components/navbar/Navbar';
 import HomePage from './pages/homepage/HomePage';
+import Work from './components/work/Work';
 
 
 
@@ -21,11 +22,15 @@ function App() {
 
       <Routes>
 
-      <Route exact path='/' element={
-        <HomePage/>
-      }>
+        <Route exact path='/' element={
+          <HomePage/>
+        }>
+        </Route>
 
-      </Route>
+        <Route  path='/work' element={
+          <Work/>
+        }>
+        </Route>
 
       </Routes>
 

@@ -54,17 +54,16 @@ const About = () => {
             <motion.p
                 variants={item}>
                 01/
-
             </motion.p>
+
             <motion.p
                 variants={item}>
                 {AboutData.intro}
-                
             </motion.p>
+
             <motion.p
                 variants={item}>
-            {AboutData.interest}
-
+                {AboutData.interest}
             </motion.p>
 
         </motion.div>
