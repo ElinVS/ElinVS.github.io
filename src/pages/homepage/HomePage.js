@@ -4,6 +4,9 @@ import '../homepage/style.css'
 const HomePage = () => {
   return (
     <>
+      <section className='home-page'>
+        
+      </section>
     
     </>
   )
