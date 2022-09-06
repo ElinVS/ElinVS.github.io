@@ -4,7 +4,6 @@
     width:100%;
     position:fixed;
     z-index:50;
-   
 }
 
 .navbar-container {
@@ -19,17 +18,16 @@
 
 .navbar-links{
     color: #121212;
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     list-style: none;
     text-decoration: none;
 }
 
-
 #home-link{
     color:#121212;
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     list-style: none;
