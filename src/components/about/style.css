@@ -1,29 +1,39 @@
 .about-page{
     min-height: 60vh;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-start;
     padding: 1em;
+    display:flex;
+    justify-content: space-evenly;
     
 }
 
 .about-container{
     display:flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width:800px;
-    height:300px;
+    width:600px; 
+    height:600px;
+    background-color: goldenrod;
+    padding:1;
+    
 
 }
 
-.about-container > p {
+.about-container > p  {
     color: #121212;
     font-size: 1.2rem;
-    font-family: 'Heebo', sans-serif;
-    text-transform: uppercase;
     letter-spacing: 0.2em; 
-
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;   
+    
 }
+
+.div-hello{
+    display: flex;
+    background-color: blanchedalmond;
+}
+
+
+
 
 

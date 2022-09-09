@@ -5,6 +5,10 @@ import { AboutData } from './AboutData'
 
 const About = () => {
 
+ 
+
+  
+
     const container = {
         initial: {
             x: 0,
@@ -30,8 +34,8 @@ const About = () => {
             opacity:1,
 
             transition: {
-              duration: 1.2,
-              type: "tween",
+              duration: '1.2',
+              type: "spring",
               ease: "easeInOut",
             },
           },
@@ -43,19 +47,32 @@ const About = () => {
     <>
 
     <section className='about-page'>
-     
+
+    <div className='div-hello'>
+
+
+
+  <motion.h1
+  variants={item}
+  
+  >
+   01 / hello  
+  </motion.h1>
+
+  
+</div>
+
+
+
+
+
         <motion.div 
             className='about-container'
             variants={container}
             initial='initial'
             animate='animation'
-            >
-                
-            <motion.p
-                variants={item}>
-                01/
-            </motion.p>
-
+            >  
+            
             <motion.p
                 variants={item}>
                 {AboutData.intro}

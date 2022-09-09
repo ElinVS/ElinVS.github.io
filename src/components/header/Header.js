@@ -3,17 +3,20 @@ import { motion } from 'framer-motion'
 import '../header/style.css'
 
 
-const Header = ({text, text2}) => {
+const Header = ({text,text2}) => {
+
+  
 
     const container = {
         initial: {
             x: 0,
-            opacity:0
+            opacity:0,
 
           },
           animation: {
             y: 0,
             opacity:1,
+  
             transition: {
               staggerChildren: 0.1,
             },
@@ -22,11 +25,11 @@ const Header = ({text, text2}) => {
       
       const item = {
         initial: {
-            y: 80,
+            x: -200,
             opacity:0  
           },
           animation: {
-            y: 0,
+            x: 0,
             opacity:1,
 
             transition: {
@@ -43,6 +46,9 @@ const Header = ({text, text2}) => {
 
   return (
     <>
+
+    <header className='header'>
+    
         <motion.div
             className='header-container'
             variants={container}
@@ -50,15 +56,17 @@ const Header = ({text, text2}) => {
             animate='animation'
             >
 
-            <motion.h1 
-                className='header-text'
-                variants={item}
-                >
-                {text}
-            </motion.h1>
+            <motion.p 
+            className='header-text'
+            variants={item}
 
-          
-        </motion.div>
+            >
+              {text}
+            </motion.p>
+
+        </motion.div>    
+
+        </header>    
     
     </>
   )

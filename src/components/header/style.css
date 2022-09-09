@@ -1,24 +1,44 @@
-.header-container{
-    min-height: 30vh;
+.header{
+    min-height: 20vh;
     display: flex;
     flex-flow: wrap;
     justify-content: flex-start;
-    align-items: flex-end; 
-    padding:1em;
-    
+    align-items: flex-end;
+
+}
+
+
+.header-container{
+    padding:5em;    
+    width:300px; 
+    display:flex;
+    flex-flow: wrap;
 }
 
 
 .header-text{
-    font-family: 'Sora', sans-serif;
-    font-size: 4rem;
-    letter-spacing: 0.6em;
-    font-weight: 100;
-    text-transform: uppercase;
     color: #121212;
-    white-space: none; 
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 8.3rem;
+    line-height: 80%;
+    letter-spacing: -0.1em;    
+    font-weight: 100;
+    margin:  0 0px 0;
+    width: calc(100% - 150px);
+    height: auto;
+    
+    text-transform: uppercase;
     
 }
+
+
+
+
+
+
+
+    
+    
 
 
 

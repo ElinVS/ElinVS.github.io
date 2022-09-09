@@ -1,0 +1,22 @@
+.footer{
+    padding:0px;
+    margin:0px; 
+    width:100%;
+    position:fixed;
+    z-index:50;
+    background-color: pink;
+}
+
+.footer-container {
+    padding: 1em; 
+    display: flex;  
+    justify-content: space-between;
+}
+
+.footer-right , .footer-left{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: right;
+    align-items: right;
+    gap: 1.5em;
+}

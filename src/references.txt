@@ -6,7 +6,37 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Oxygen', sans-serif;
 font-family: 'Sora', sans-serif;
 
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Concert One', cursive;
+font-family: 'Karla', sans-serif;
+font-family: 'Familjen Grotesk', sans-serif;
+
 COLOURS
 
 pale blue: #A7CDE0;
 beautiful orange red: #CA5E48
+
+255
+225
+205
+
+136
+138
+137
+
+189
+172
+144
+
+208
+196
+175
+
+183
+89
+57

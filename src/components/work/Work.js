@@ -21,9 +21,6 @@ const Work = () => {
             <div className='div3'> 
                 <h1>matthew collings</h1>    
             </div>
-            <div className='div4'> 
-                <h1>matthew collings</h1>   
-            </div>
 
         </div>
 

@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import HomePage from './pages/homepage/HomePage';
 import Work from './components/work/Work';
+import Footer from './components/footer/Footer';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       {/* <Message/> */}
 
       <Router>
+      
 
       <Navbar/>
 
@@ -27,14 +29,16 @@ function App() {
         }>
         </Route>
 
-        <Route  path='/work' element={
+        {/* <Route  path='/work' element={
           <Work/>
         }>
-        </Route>
+        </Route> */}
 
       </Routes>
 
+      <Footer/>
 
+  
       </Router>
 
       
