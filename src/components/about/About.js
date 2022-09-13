@@ -26,7 +26,7 @@ const About = () => {
       
       const item = {
         initial: {
-            x: 80,
+            x: 200,
             opacity:0  
           },
           animation: {
@@ -35,7 +35,24 @@ const About = () => {
 
             transition: {
               duration: '1.2',
-              type: "spring",
+              type: "tween",
+              ease: "easeInOut",
+            },
+          },
+        };
+
+      const item2 = {
+        initial: {
+            x: -200,
+            opacity:0  
+          },
+          animation: {
+            x: 0,
+            opacity:1,
+
+            transition: {
+              duration: '1.2',
+              type: "tween",
               ease: "easeInOut",
             },
           },
@@ -48,42 +65,39 @@ const About = () => {
 
     <section className='about-page'>
 
-    <div className='div-hello'>
+    <motion.div 
+      className='section-one'
+      variants={container}
+      initial='initial'
+      animate='animation'
+      >
 
+      <motion.p
+      variants={item2}
+      >
+      01 / hello  
+      </motion.p>
 
+    </motion.div>
 
-  <motion.h1
-  variants={item}
-  
-  >
-   01 / hello  
-  </motion.h1>
-
-  
-</div>
-
-
-
-
-
-        <motion.div 
-            className='about-container'
-            variants={container}
-            initial='initial'
-            animate='animation'
-            >  
+    <motion.div 
+      className='about-container'
+      variants={container}
+      initial='initial'
+      animate='animation'
+    >  
             
-            <motion.p
-                variants={item}>
-                {AboutData.intro}
-            </motion.p>
+      <motion.p
+        variants={item}>
+        {AboutData.intro}
+      </motion.p>
 
-            <motion.p
-                variants={item}>
-                {AboutData.interest}
-            </motion.p>
+      <motion.p
+        variants={item}>
+        {AboutData.interest}
+      </motion.p>
 
-        </motion.div>
+    </motion.div>
 
     </section>
     

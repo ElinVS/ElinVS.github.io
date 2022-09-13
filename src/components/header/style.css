@@ -2,31 +2,36 @@
     min-height: 20vh;
     display: flex;
     flex-flow: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
+    background-color: pink;
 
 }
 
 
 .header-container{
-    padding:5em;    
-    width:300px; 
+    padding:8em 0 0 2em;    
+    /* width:300px;  */
     display:flex;
     flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: orange; */
+    
 }
 
 
 .header-text{
     color: #121212;
-    font-family: 'Familjen Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 8.3rem;
-    line-height: 80%;
-    letter-spacing: -0.1em;    
+    line-height: 90%;
+    letter-spacing: 0.08em;    
     font-weight: 100;
-    margin:  0 0px 0;
+    margin:  0;
     width: calc(100% - 150px);
     height: auto;
-    
+    /* background-color: blue; */ 
     text-transform: uppercase;
     
 }

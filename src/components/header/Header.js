@@ -25,7 +25,7 @@ const Header = ({text,text2}) => {
       
       const item = {
         initial: {
-            x: -200,
+            x: -80,
             opacity:0  
           },
           animation: {
@@ -47,7 +47,7 @@ const Header = ({text,text2}) => {
   return (
     <>
 
-    <header className='header'>
+   
     
         <motion.div
             className='header-container'
@@ -66,7 +66,7 @@ const Header = ({text,text2}) => {
 
         </motion.div>    
 
-        </header>    
+      
     
     </>
   )
