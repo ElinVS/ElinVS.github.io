@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 8px;
+    grid-column-gap: 0px;
     grid-row-gap: 0px;
     
 }
@@ -19,17 +19,14 @@
 
 
 .about-container{
-    grid-area: 2 / 2 / 4 / 3; 
+    grid-area: 2 / 1 / 4 / 2; 
     display:flex;
     flex-flow: column;
     justify-content: flex-start;
-    align-items: center;
     /* background-color: goldenrod; */
-    text-align:justify;  
+    text-align:justify; 
 
 }
-
-
 
 .about-container > p , .section-one > p {
     color: #121212;
@@ -41,11 +38,11 @@
 }
 
 .img-wrapper{
-    grid-area: 2 / 1 / 4 / 2; 
+    grid-area: 2 / 2 / 4 / 3; 
     display: flex ;
     justify-content: center;
     align-items: flex-start;
-    padding:1em
+    padding:1em;
    
 }
 
@@ -54,8 +51,8 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position:100% ;
-    width:50%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
    
 }
 

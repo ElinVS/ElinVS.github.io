@@ -48,6 +48,7 @@ const Title = ({titletext}) => {
             initial='initial'
             animate='animation'
             >
+                
             <motion.p 
             className='title-text'
             variants={item}
@@ -55,8 +56,7 @@ const Title = ({titletext}) => {
               {titletext}
             </motion.p>
 
-        </motion.div>    
-    
+        </motion.div> 
    
    </>
   )

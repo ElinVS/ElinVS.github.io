@@ -5,9 +5,6 @@ import { AboutData } from './AboutData'
 
 const About = () => {
 
- 
-
-  
 
     const container = {
         initial: {
@@ -26,28 +23,11 @@ const About = () => {
       
       const item = {
         initial: {
-            x: 200,
+            y: 80,
             opacity:0  
           },
           animation: {
-            x: 0,
-            opacity:1,
-
-            transition: {
-              duration: '1.2',
-              type: "tween",
-              ease: "easeInOut",
-            },
-          },
-        };
-
-      const item2 = {
-        initial: {
-            x: -200,
-            opacity:0  
-          },
-          animation: {
-            x: 0,
+            y: 0,
             opacity:1,
 
             transition: {
@@ -71,11 +51,11 @@ const About = () => {
       className='section-one'
       variants={container}
       initial='initial'
-      animate='animation'
+      whileInView='animation'
       >
 
       <motion.p
-      variants={item2}
+      variants={item}
       >
       01 / hello  
       </motion.p>
@@ -83,25 +63,12 @@ const About = () => {
     </motion.div>
 
     
-    <motion.div 
-      className='img-wrapper'
-      variants={container}
-      initial='initial'
-      animate='animation'
-      >
-      <motion.div 
-        className='img'
-        variants={item}
-      /> 
-    </motion.div>
-
-   
 
     <motion.div 
       className='about-container'
       variants={container}
       initial='initial'
-      animate='animation'
+      whileInView='animation'
     >  
             
       <motion.p
@@ -113,6 +80,19 @@ const About = () => {
         variants={item}>
         {AboutData.interest}
       </motion.p>
+
+    </motion.div>
+
+    <motion.div 
+      className='img-wrapper'
+      variants={container}
+      initial='initial'
+      whileInView='animation'
+      >
+      <motion.div 
+        className='img'
+        variants={item}
+      ></motion.div>
 
     </motion.div>
 
