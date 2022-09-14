@@ -1,22 +1,19 @@
 
-
-
-.header-container{
-    min-height: 20vh;
-    padding:9em 0 0 2em;    
-    
+.title-container{
+    min-height: 30vh;
+    padding:2em 0 0 2em;    
     display:flex;
     flex-flow: wrap;
     justify-content: flex-start;
-    align-items: flex-start; 
-    
+    align-items: flex-start;
+
 }
 
-
-.header-text{
+.title-text{
+   
     color: #121212;
     font-family: 'Inter', sans-serif;
-    font-size: 8.3rem;
+    font-size: 6rem;
     line-height: 90%;
     letter-spacing: 0.08em;    
     font-weight: 100;
@@ -24,18 +21,6 @@
     width: calc(100% - 150px);
     height: auto;
     text-transform: uppercase;
+    font-style: italic;
     
 }
-
-
-
-
-
-
-
-    
-    
-
-
-
-

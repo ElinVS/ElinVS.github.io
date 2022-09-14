@@ -29,10 +29,10 @@ function App() {
         }>
         </Route>
 
-        {/* <Route  path='/work' element={
+        <Route  path='/work' element={
           <Work/>
         }>
-        </Route> */}
+        </Route>
 
       </Routes>
 

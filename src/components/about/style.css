@@ -1,44 +1,67 @@
 .about-page{
-    min-height: 60vh;
-    padding: 8em 3em 0 3em;
+    min-height: 100vh;
+    padding: 0em 3em 0 3em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8px;
     grid-row-gap: 0px;
     
 }
 
 .section-one{
+    grid-area: 1 / 1 / 2 / 3;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    /* background-color: blanchedalmond; */
-    text-decoration: underline 1px #121212;
+    align-items: flex-end;
+
 }
 
 
 .about-container{
+    grid-area: 2 / 2 / 4 / 3; 
     display:flex;
     flex-flow: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     /* background-color: goldenrod; */
-    padding:1;
-    text-align:justify;
-    
+    text-align:justify;  
 
 }
+
+
 
 .about-container > p , .section-one > p {
     color: #121212;
     font-size: 1.2rem;
     letter-spacing: 0.2em; 
     font-family: 'Heebo', sans-serif;
-    text-transform: uppercase;  
-  
+    text-transform: uppercase; 
     
 }
+
+.img-wrapper{
+    grid-area: 2 / 1 / 4 / 2; 
+    display: flex ;
+    justify-content: center;
+    align-items: flex-start;
+    padding:1em
+   
+}
+
+.img{
+    background-image: url('/src/assets/about/elin_bench_tokyo.JPG');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% ;
+    width:50%;
+    height: 80%;
+   
+}
+
+
+
+
 
 
 

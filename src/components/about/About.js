@@ -65,6 +65,8 @@ const About = () => {
 
     <section className='about-page'>
 
+    
+
     <motion.div 
       className='section-one'
       variants={container}
@@ -79,6 +81,21 @@ const About = () => {
       </motion.p>
 
     </motion.div>
+
+    
+    <motion.div 
+      className='img-wrapper'
+      variants={container}
+      initial='initial'
+      animate='animation'
+      >
+      <motion.div 
+        className='img'
+        variants={item}
+      /> 
+    </motion.div>
+
+   
 
     <motion.div 
       className='about-container'

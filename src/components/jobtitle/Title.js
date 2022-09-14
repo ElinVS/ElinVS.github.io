@@ -1,11 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../header/style.css'
+import '../jobtitle/style.css'
 
-
-const Header = ({text}) => {
-
-  
+const Title = ({titletext}) => {
 
     const container = {
         initial: {
@@ -25,7 +22,7 @@ const Header = ({text}) => {
       
       const item = {
         initial: {
-            x: -80,
+            x: 80,
             opacity:0  
           },
           animation: {
@@ -42,34 +39,27 @@ const Header = ({text}) => {
 
 
 
-
-
   return (
-    <>
+   <>
 
-   
-    
         <motion.div
-            className='header-container'
+            className='title-container'
             variants={container}
             initial='initial'
             animate='animation'
             >
-
             <motion.p 
-            className='header-text'
+            className='title-text'
             variants={item}
-
             >
-              {text}
+              {titletext}
             </motion.p>
 
         </motion.div>    
-
-      
     
-    </>
+   
+   </>
   )
 }
 
-export default Header
+export default Title
