@@ -62,7 +62,7 @@ const About = () => {
 
     </motion.div>
 
-    
+    <div className='grid-wrapper'>
 
     <motion.div 
       className='about-container'
@@ -95,6 +95,8 @@ const About = () => {
       ></motion.div>
 
     </motion.div>
+
+    </div>
 
     </section>
     
