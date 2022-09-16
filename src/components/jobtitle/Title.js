@@ -56,6 +56,7 @@ const Title = ({titletext}) => {
               {titletext}
             </motion.p>
 
+
         </motion.div> 
    
    </>

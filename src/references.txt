@@ -20,6 +20,10 @@ COLOURS
 
 pale blue: #A7CDE0;
 beautiful orange red: #CA5E48
+background-color: rgb(208, 196, 175); 
+background-color: #d4c5a3; 
+background-color: rgb(133, 83,66); 
+background-color: #A7CDE0; 
 
 255
 225

@@ -1,6 +1,9 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import {motion} from 'framer-motion'
 import '../work/style.css'
+
+import test from '../../assets/about/dark-handshake.jpeg'
 
 const Work = () => {
 
@@ -10,20 +13,83 @@ const Work = () => {
     <>
 
     <section className='work-page'>
-    <div class="div-title"> 
+
+      {/* <motion.div 
+      className="div-title"
+      > 
             <p>02 / selected work</p>
+      </motion.div>
+
+      <div class="parent">
+
+        <div className='work-img'>
+
+          <p>matthew collings</p>
+          <p>musicians website</p>
+
+          
+        </div>
+        <div className='work-img'>
+        <p>matthew collings</p>
+          <p>musicians website</p>
+
+        </div>
+        <div className='work-img'>
+        <p>matthew collings</p>
+          <p>musicians website</p>
 
         </div>
 
-    <div class="parent">
+      </div> */}
+
+
+      <motion.div 
+        className="div-title"
+        > 
+            <p>02 / selected work</p>
+      </motion.div>
+
+      <div className='work-grid-wrapper'>
+
+        
+        <Link to='/project01' className="work-link">
+        
+        <div className='work-selection'>
+        
+          <p>matthew collings</p>
+          <p> 01 </p>
+
+        </div>
+
+        </Link>
+
+    
+
+        
+          
+            
+          
       
-        <div class="div1"> matthew collings - artist website </div>
-        <div class="div2"> </div>
-        <div class="div3"> MindSpace - group project codeclan </div>
-        <div class="div4"> </div>
-        <div class="div5"> Erik - group project codeclan</div>
-        <div class="div6"> </div>
-    </div>
+
+
+
+
+
+
+        <div className='work-selection'>
+          
+          <p>mind space</p>
+          <p> 02 </p>
+        </div>
+        <div className='work-selection'>
+          
+          <p>erik</p>
+          <p> 03 </p>
+        </div>
+      
+
+      </div>
+   
 
         
 

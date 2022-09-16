@@ -45,8 +45,6 @@ const About = () => {
 
     <section className='about-page'>
 
-    
-
     <motion.div 
       className='section-one'
       variants={container}
@@ -54,15 +52,34 @@ const About = () => {
       whileInView='animation'
       >
 
-      <motion.p
+      {/* <motion.p
       variants={item}
       >
       01 / hello  
-      </motion.p>
+      </motion.p> */}
 
     </motion.div>
 
     <div className='grid-wrapper'>
+
+    <motion.div 
+      className='portrait-img-wrapper'
+      variants={container}
+      initial='initial' 
+      whileInView='animation'
+      >
+
+      <p> 01 / HELLO</p>
+        
+      <motion.div 
+        className='img'
+        variants={item}
+      ></motion.div>
+
+      <p> tokyo 2019</p>
+      
+    </motion.div>
+    
 
     <motion.div 
       className='about-container'
@@ -81,22 +98,23 @@ const About = () => {
         {AboutData.interest}
       </motion.p>
 
-    </motion.div>
+      <motion.p
+        variants={item}>
+        {AboutData.interest}
+      </motion.p>
 
-    <motion.div 
-      className='img-wrapper'
-      variants={container}
-      initial='initial'
-      whileInView='animation'
-      >
-      <motion.div 
-        className='img'
-        variants={item}
-      ></motion.div>
+      <motion.p
+        variants={item}>
+        {AboutData.interest}
+      </motion.p>
 
     </motion.div>
 
     </div>
+
+
+
+
 
     </section>
     

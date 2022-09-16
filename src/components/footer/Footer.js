@@ -10,12 +10,12 @@ const Footer = () => {
 
                 <div className='footer-left'>
                     <p>dark </p>
-                    <p>C elin svennber</p>
-                    
+                    <p>light </p>
+                    <p>wes anderson</p>
                 </div>
 
                 <div className='footer-right'>
-                    <p>light </p>
+                    <p>C </p>
                     <p>code&design by Elin Svennberg</p>
                 </div>
 

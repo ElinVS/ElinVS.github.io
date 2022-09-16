@@ -1,23 +1,26 @@
 .home-page{
+
+    /* background-color: rgb(218, 215, 213); */
+    background-color: rgb(249, 244, 236);
+    /* background-color: rgb(242, 243, 237); */
+    /* background-color: #f0e9e1; */
+
+
+
     /* background-color: rgb(233, 229, 222); */
-    /* background-color: rgb(255, 225, 205); */
     /* background-color: rgb(136, 138, 137); */
-    /* background-color: #f1efec; */
+   
 
     /* background-color: rgb(230, 230, 230); */
-    /* background-color: rgb(208, 196, 175); */
-    /* background-color: rgb(217, 208, 207); */
-    /* background-color: rgb(218, 215, 213); */
-    /* background-color: rgb(218, 205, 182); */
-    /* background-color: rgb(242, 243, 237); */
-    background-color: #f0e9e1;
-    /* background-color: #d4c5a3; */
-    /* background-color: rgb(255, 255, 255); */
-    /* background-color: rgb(133, 83,66); */
    
+    /* background-color: rgb(217, 208, 207); */
     
-    /* background-color: #A7CDE0; */
+    /* background-color: rgb(218, 205, 182); */
+    
+    
+ 
 
     min-height: 100vh;
 }
 
+ 

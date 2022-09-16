@@ -7,6 +7,7 @@ import Title from '../../components/jobtitle/Title'
 
 
 const HomePage = ({text, titletext}) => {
+  
   return (
     <>
       <section className='home-page'>
