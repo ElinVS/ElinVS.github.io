@@ -69,7 +69,7 @@ const About = () => {
       whileInView='animation'
       >
 
-      <p> 01 / HELLO</p>
+      <p> 02 / HELLO</p>
         
       <motion.div 
         className='img'

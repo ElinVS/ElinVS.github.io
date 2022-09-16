@@ -13,9 +13,9 @@ const HomePage = ({text, titletext}) => {
       <section className='home-page'>
         <Header text="elin svennberg "  />
         <Title titletext="creative developer"/>
-        
-        <About/>
         <Work/>
+        <About/>
+        
       </section>
     </>
   )

@@ -6,7 +6,9 @@ import Navbar from './components/navbar/Navbar';
 import HomePage from './pages/homepage/HomePage';
 import Work from './components/work/Work';
 import Footer from './components/footer/Footer';
-import Project01 from './pages/project1/Project01';
+import Project01 from './pages/project01/Project01';
+import Project02 from './pages/project02/Project02';
+import Project03 from './pages/project03/Project03';
 
 
 
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <>
+    
       {/* <Message/> */}
 
       
@@ -42,7 +45,18 @@ function App() {
         }>
         </Route>
 
+        <Route  path='/project02' element={
+          <Project02/>
+        }>
+        </Route>
+
+        <Route  path='/project03' element={
+          <Project03/>
+        }>
+        </Route>
+
       </Routes>
+      
       <Footer />
 
       </Router>
