@@ -1,73 +1,28 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../header/style.css'
+import { fadeInLeft , fadeInLeftChild} from '../../animations/Variants'
 
 
 const Header = ({text}) => {
 
-  
-
-    const container = {
-        initial: {
-            x: 0,
-            opacity:0,
-
-          },
-          animation: {
-            y: 0,
-            opacity:1,
-  
-            transition: {
-              staggerChildren: 0.1,
-            },
-          },
-        };
-      
-      const item = {
-        initial: {
-            x: -80,
-            opacity:0  
-          },
-          animation: {
-            x: 0,
-            opacity:1,
-
-            transition: {
-              duration: 1.2,
-              type: "spring",
-              ease: "easeInOut",
-            },
-          },
-        };
-
-
-
-
 
   return (
     <>
-
-   
-    
         <motion.div
             className='header-container'
-            variants={container}
+            variants={fadeInLeft}
             initial='initial'
-            animate='animation'
+            animate='animate'
             >
 
             <motion.p 
             className='header-text'
-            variants={item}
-
+            variants={fadeInLeftChild}
             >
               {text}
             </motion.p>
-
         </motion.div>    
-
-      
-    
     </>
   )
 }
