@@ -8,6 +8,7 @@ import test from '../../assets/about/dark-handshake.jpeg'
 
 const Work = () => {
 
+ 
 
 
   return (
@@ -44,10 +45,21 @@ const Work = () => {
       </div> */}
 
 
+
+
+
       <motion.div 
         className="div-title"
-        > 
-            <p>01 / selected work</p>
+      > 
+
+          
+            <motion.p 
+            >01 / selected work</motion.p>
+
+
+          
+
+            
       </motion.div>
 
       <div className='work-grid-wrapper'>

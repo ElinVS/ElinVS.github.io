@@ -1,0 +1,28 @@
+
+
+
+.project-container{
+    min-height: 20vh;
+    padding:9em 0 0 2em;     
+    display:flex;
+    /* flex-flow: wrap; */
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.project-text{
+   
+    color: #121212;
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+    line-height: 90%;
+    letter-spacing: 0.08em;    
+    font-weight: 600;
+    margin:  0;
+    width: calc(100% - 150px);
+    height: auto;
+    text-transform: uppercase;
+    font-style: italic;
+    
+}

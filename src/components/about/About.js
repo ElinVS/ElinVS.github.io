@@ -38,6 +38,9 @@ const About = () => {
           },
         };
 
+        
+  
+
 
 
   return (
@@ -69,14 +72,18 @@ const About = () => {
       whileInView='animation'
       >
 
-      <p> 02 / HELLO</p>
+      <motion.p
+      variants={item}
+      > 02 / HELLO</motion.p>
         
       <motion.div 
         className='img'
         variants={item}
       ></motion.div>
 
-      <p> tokyo 2019</p>
+      <motion.p
+      variants={item}
+      > tokyo 2019</motion.p>
       
     </motion.div>
     

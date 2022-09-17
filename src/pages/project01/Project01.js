@@ -1,10 +1,12 @@
 import React from 'react'
+import ProjectHeader from '../../components/projects/ProjectHeader'
 
-const Project01 = () => {
+
+const Project01 = ({projecttext}) => {
   return (
-    <div>
-      project 01
-    </div>
+    <>
+      <ProjectHeader projecttext="matthew collings" />
+    </>
   )
 }
 
