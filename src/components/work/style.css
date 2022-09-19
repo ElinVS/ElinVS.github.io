@@ -1,5 +1,5 @@
 .work-page{
-    min-height:100vh;
+    min-height:90vh;
     padding: 0em 3em 0 3em;
     
 }
@@ -30,8 +30,9 @@
     
 }
 
-.work-selection >p:hover{
-    
+.work-selection :hover{
+   
+
     animation: none;
     
 }
@@ -80,6 +81,8 @@
 
 .feature:hover {
     opacity: 1;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -91,8 +94,6 @@
     opacity: 0;
     height: 10vh;
     width: 40vh; 
-    
-   
   
 }
 

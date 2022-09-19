@@ -62,7 +62,7 @@ export const fadeInLeft =  {
 
           transition: {
             duration: '1.2',
-            type: "spring",
+            type: "tween",
             ease: "easeInOut",
           },
         },

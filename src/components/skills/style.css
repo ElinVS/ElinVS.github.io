@@ -1,5 +1,5 @@
 .skills-page{
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 0em 3em 0em 3em;
 }
 
@@ -18,7 +18,7 @@ line {
 .skills-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,7 +32,7 @@ li , h3{
 
 }
 
-.skills-container > svg {
+.thumbs-up-container {
     display: flex;
     justify-content: center;
     align-items: center;

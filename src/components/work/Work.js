@@ -54,9 +54,6 @@ const Work = () => {
       />
       </motion.svg>
 
-
-
-
         <motion.p 
         variants={fadeUpChild}
         >01 / selected work</motion.p>  

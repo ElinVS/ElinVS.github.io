@@ -26,7 +26,7 @@ const Navbar = () => {
           duration: 1.2,
           type: "spring",
           ease: "easeInOut",
-          delay: 0.3,
+          delay: 0.5,
         }}
         
         >
@@ -41,7 +41,7 @@ const Navbar = () => {
            duration: 1.2,
            type: "spring",
            ease: "easeInOut",
-           delay: 0.3,
+           delay: 0.5,
          }}
         
         >
