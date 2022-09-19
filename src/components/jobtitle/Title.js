@@ -64,7 +64,7 @@ const Title = ({titletext}) => {
                 duration: 1.2,
                 type: "spring",
                 ease: "easeInOut",
-                delay: 0.8,
+                delay: 0.7,
               }}
             >
             <svg  

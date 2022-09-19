@@ -9,3 +9,33 @@ line {
     /* fill: transparent; */
   }
 
+.skills-wrapper{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li , h3{
+    color: #121212;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em; 
+    font-family: 'Heebo', sans-serif;
+    list-style: none; 
+    text-align: justify;
+
+}
+
+.skills-container > svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px
+}
