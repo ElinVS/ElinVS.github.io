@@ -1,0 +1,11 @@
+.skills-page{
+    min-height: 100vh;
+    padding: 0em 3em 0em 3em;
+}
+
+line {
+    stroke-width: 1px;
+    stroke-linecap: round;
+    /* fill: transparent; */
+  }
+

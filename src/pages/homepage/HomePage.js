@@ -4,6 +4,7 @@ import Header from '../../components/header/Header'
 import About from '../../components/about/About'
 import Work from '../../components/work/Work'
 import Title from '../../components/jobtitle/Title'
+import Skills from '../../components/skills/Skills'
 
 
 const HomePage = ({text, titletext}) => {
@@ -15,6 +16,7 @@ const HomePage = ({text, titletext}) => {
         <Title titletext="creative developer"/>
         <Work/>
         <About/>
+        <Skills/>
         
       </section>
     </>

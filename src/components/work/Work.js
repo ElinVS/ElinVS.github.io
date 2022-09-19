@@ -9,6 +9,21 @@ import { fadeUp,fadeUpChild } from '../../animations/Variants'
 
 const Work = () => {
 
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible:  {
+      
+     
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: {  type: "spring", duration: 1.5, bounce: 0 },
+        //   opacity: { delay, duration: 0.01 }
+        }
+      
+    }
+  };
+
   return (
     <>
 
@@ -20,6 +35,28 @@ const Work = () => {
         variants={fadeUp}
         animate='animate'
       > 
+
+<motion.svg
+      width="1000"
+      height="10"
+      viewBox="0 0 1000 10"
+      initial="hidden"
+      whileInView="visible"
+    >
+       <motion.line
+        x1="1"
+        y1="10"
+        x2="250"
+        y2="10"
+        stroke="#121212"
+        variants={draw}
+        // custom={0.5}
+      />
+      </motion.svg>
+
+
+
+
         <motion.p 
         variants={fadeUpChild}
         >01 / selected work</motion.p>  

@@ -24,23 +24,6 @@
     
 }
 
-svg{
-    height:100px;
-    width: 100px;
-    border-radius: 50%;
-    border: 1px solid #121212;
-    padding:1em;
-   
-      
-} 
-
-
-svg:hover{
-   background-color: #121212;
-  
-   
-}
-
 
 .arrow-container{
     min-height: 30vh;
@@ -50,5 +33,25 @@ svg:hover{
     padding:0em 10em 0 2em;
     
 }
+
+
+.arrow-container > svg{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #121212;
+    padding:1em;  
+      
+} 
+.arrow-container > svg:hover{
+   background-color: #121212;
+      
+} 
+
+
+
+
+
+
 
 
