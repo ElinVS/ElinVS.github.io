@@ -5,7 +5,7 @@
     /* flex-flow: wrap; */
     justify-content: flex-start;
     align-items: flex-start;
-    position: sticky;
+
     z-index: -1;
     
 }

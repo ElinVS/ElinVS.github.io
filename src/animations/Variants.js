@@ -1,5 +1,5 @@
 
-// animation used in Header.js and Title.js
+// fade in from left animation
 
 export const fadeInLeft =  {
 
@@ -34,4 +34,36 @@ export const fadeInLeft =  {
       },
     };
 
+// fade up animation
 
+ export const fadeUp = {
+      initial: {
+          x: 0,
+          opacity:0
+
+        },
+        animate: {
+          y: 0,
+          opacity:1,
+          transition: {
+            staggerChildren: 0.1,
+          },
+        },
+      };
+    
+ export const fadeUpChild = {
+      initial: {
+          y: 80,
+          opacity:0  
+        },
+        animate: {
+          y: 0,
+          opacity:1,
+
+          transition: {
+            duration: '1.2',
+            type: "spring",
+            ease: "easeInOut",
+          },
+        },
+      };

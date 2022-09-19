@@ -12,6 +12,7 @@ import Project03 from './pages/project03/Project03';
 
 
 
+
 // import Message from './components/message/Message';
 
 function App() {
@@ -24,10 +25,9 @@ function App() {
 
       
 
-      <Router>
-
+      <Router> 
+        
       <Navbar/>
-
       <Routes>
 
         <Route exact path='/' element={

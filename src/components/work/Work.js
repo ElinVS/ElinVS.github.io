@@ -1,95 +1,75 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link} from "react-router-dom"
 import {motion} from 'framer-motion'
 import '../work/style.css'
-import Marquee from './marquee/Marquee'
+import { fadeUp,fadeUpChild } from '../../animations/Variants'
 
-import test from '../../assets/about/dark-handshake.jpeg'
+
+
 
 const Work = () => {
-
- 
-
 
   return (
     <>
 
-    <section className='work-page'>
-
-      {/* <motion.div 
-      className="div-title"
-      > 
-            <p>02 / selected work</p>
-      </motion.div>
-
-      <div class="parent">
-
-        <div className='work-img'>
-
-          <p>matthew collings</p>
-          <p>musicians website</p>
-
-          
-        </div>
-        <div className='work-img'>
-        <p>matthew collings</p>
-          <p>musicians website</p>
-
-        </div>
-        <div className='work-img'>
-        <p>matthew collings</p>
-          <p>musicians website</p>
-
-        </div>
-
-      </div> */}
-
-
-
-
+    <motion.section className='work-page'>
 
       <motion.div 
         className="div-title"
+        initial='initial'
+        variants={fadeUp}
+        animate='animate'
       > 
-
-          
-            <motion.p 
-            >01 / selected work</motion.p>
-
-
-          
-
-            
+        <motion.p 
+        variants={fadeUpChild}
+        >01 / selected work</motion.p>  
       </motion.div>
 
       <div className='work-grid-wrapper'>
 
       <div className="feature">
         <Link to='/project01' className="work-link">
-        
-          <div className='work-selection'>
-            {/* <img src={test} className="feature-img" alt="breath"/> */}
+          <motion.div 
+          className='work-selection'
+          whileHover={{x:80}}
+          transition={{type:'tween'}}
+          >
             <p>matthew collings</p> 
-            <span className="feature-img">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <span className="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
             <p> 01 </p>  
-          </div>
-          
+          </motion.div> 
         </Link>
-        </div>                            
-                            
-        <Link to='/project02' className="work-link">
-          <div className='work-selection'>
-            <p>mind space</p>
-            <p> 02 </p>
-          </div>
-        </Link>
+      </div>  
 
-        <Link to='/project03' className="work-link">
-          <div className='work-selection'>
-            <p>erik</p>
-            <p> 03 </p>
-          </div>  
+      <div className="feature">
+        <Link to='/project02' className="work-link">
+          <motion.div 
+          className='work-selection'
+          whileHover={{x:80}}
+          transition={{type:'tween'}}
+          >
+            <p>mind space</p> 
+            <span className="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <p> 02 </p>  
+          </motion.div>
         </Link>
+      </div> 
+
+      <div className="feature">
+        <Link to='/project03' className="work-link">
+          <motion.div 
+          className='work-selection'
+          whileHover={{x:80}}
+          transition={{type:'tween'}}
+          >
+            <p>erik</p> 
+            <span className="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <p> 03 </p>  
+          </motion.div>
+        </Link>
+      </div>                            
+                            
+
 
       </div>
    
@@ -97,7 +77,7 @@ const Work = () => {
         
 
 
-    </section>
+    </motion.section>
 
 
 

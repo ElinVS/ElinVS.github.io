@@ -2,46 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import '../about/style.css'
 import { AboutData } from './AboutData'
+import { fadeUp, fadeUpChild } from '../../animations/Variants'
+
 
 const About = () => {
-
-
-    const container = {
-        initial: {
-            x: 0,
-            opacity:0
-
-          },
-          animation: {
-            y: 0,
-            opacity:1,
-            transition: {
-              staggerChildren: 0.1,
-            },
-          },
-        };
-      
-      const item = {
-        initial: {
-            y: 80,
-            opacity:0  
-          },
-          animation: {
-            y: 0,
-            opacity:1,
-
-            transition: {
-              duration: '1.2',
-              type: "tween",
-              ease: "easeInOut",
-            },
-          },
-        };
-
-        
-  
-
-
 
   return (
     <>
@@ -50,9 +14,9 @@ const About = () => {
 
     <motion.div 
       className='section-one'
-      variants={container}
+      variants={fadeUp}
       initial='initial'
-      whileInView='animation'
+      whileInView='animate'
       >
 
       {/* <motion.p
@@ -67,22 +31,22 @@ const About = () => {
 
     <motion.div 
       className='portrait-img-wrapper'
-      variants={container}
+      variants={fadeUp}
       initial='initial' 
-      whileInView='animation'
+      whileInView='animate'
       >
 
       <motion.p
-      variants={item}
+      variants={fadeUpChild}
       > 02 / HELLO</motion.p>
         
       <motion.div 
         className='img'
-        variants={item}
+        variants={fadeUpChild}
       ></motion.div>
 
       <motion.p
-      variants={item}
+      variants={fadeUpChild}
       > tokyo 2019</motion.p>
       
     </motion.div>
@@ -90,28 +54,28 @@ const About = () => {
 
     <motion.div 
       className='about-container'
-      variants={container}
+      variants={fadeUp}
       initial='initial'
-      whileInView='animation'
+      whileInView='animate'
     >  
             
       <motion.p
-        variants={item}>
+        variants={fadeUpChild}>
         {AboutData.intro}
       </motion.p>
 
       <motion.p
-        variants={item}>
+        variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>
 
       <motion.p
-        variants={item}>
+        variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>
 
       <motion.p
-        variants={item}>
+        variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>
 

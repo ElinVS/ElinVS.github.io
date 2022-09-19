@@ -1,16 +1,15 @@
 
 .title-container{
-    min-height: 30vh;
+    min-height: 10vh;
     padding:2em 0 0 2em;    
     display:flex;
     flex-flow: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-
+   
 }
 
 .title-text{
-   
     color: #121212;
     font-family: 'Inter', sans-serif;
     font-size: 5rem;
@@ -24,3 +23,32 @@
     font-style: italic;
     
 }
+
+svg{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #121212;
+    padding:1em;
+   
+      
+} 
+
+
+svg:hover{
+   background-color: #121212;
+  
+   
+}
+
+
+.arrow-container{
+    min-height: 30vh;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    padding:0em 10em 0 2em;
+    
+}
+
+
