@@ -1,6 +1,4 @@
 
-
-
 .header-container{
     min-height: 20vh;
     padding:9em 0 0 2em;    
@@ -10,7 +8,6 @@
     align-items: flex-start; 
     
 }
-
 
 .header-text{
     color: #121212;

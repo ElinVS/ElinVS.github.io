@@ -2,7 +2,6 @@
 // fade in from left animation
 
 export const fadeInLeft =  {
-
     initial: {
         x: 0,
         opacity:0,
@@ -10,7 +9,6 @@ export const fadeInLeft =  {
       animate: {
         y: 0,
         opacity:1,
-
         transition: {
           staggerChildren: 0.1,
         },
@@ -25,7 +23,6 @@ export const fadeInLeft =  {
       animate: {
         x: 0,
         opacity:1,
-
         transition: {
           duration: 1.2,
           type: "spring",
@@ -34,13 +31,48 @@ export const fadeInLeft =  {
       },
     };
 
+
+// fade in from right animation
+
+export const fadeInRight = {
+  initial: {
+      x: 0,
+      opacity:0,
+
+    },
+    animate: {
+      y: 0,
+      opacity:1,
+
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+export const fadeInRightChild = {
+  initial: {
+      x: 80,
+      opacity:0  
+    },
+    animate: {
+      x: 0,
+      opacity:1,
+
+      transition: {
+        duration: 1.2,
+        type: "spring",
+        ease: "easeInOut",
+      },
+    },
+  };
+
 // fade up animation
 
  export const fadeUp = {
       initial: {
           x: 0,
           opacity:0
-
         },
         animate: {
           y: 0,
@@ -68,8 +100,9 @@ export const fadeInLeft =  {
         },
       };
 
+// svg draw animation 
 
- export const draw = {
+export const draw = {
         hidden: { pathLength: 0, opacity: 0 },
         visible:  {
             pathLength: 1,
@@ -77,7 +110,33 @@ export const fadeInLeft =  {
             transition: {
               pathLength: {  type: "tween", duration: 1.5, bounce: 0 },
             }
-          
-        }
-      };
-    
+          }
+        };
+
+// navbar animation
+
+export const moveDown =  {
+  initial:{ y: -400 },
+  animate:{ y: 0 ,
+  transition:{
+    duration: 1.2,
+    type: "spring",
+    ease: "easeInOut",
+    delay: 0.6,
+    }
+  }    
+}
+
+// round arrow div animation
+
+export const moveUp =  {
+  initial:{ y: 400 },
+  animate:{ y: 0 ,
+  transition:{
+    duration: 1.2,
+    type: "spring",
+    ease: "easeInOut",
+    delay: 0.6,
+    }
+  }    
+}

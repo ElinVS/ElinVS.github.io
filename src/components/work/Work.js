@@ -27,7 +27,7 @@ const Work = () => {
   return (
     <>
 
-    <motion.section className='work-page'>
+    <motion.section className='work-page' id='work'>
 
       <motion.div 
         className="div-title"

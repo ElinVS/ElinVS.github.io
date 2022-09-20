@@ -14,7 +14,7 @@
     
 }
 
-.navbar-right , .navbar-left, .navbar-middle{
+.navbar-left, .navbar-middle , .navbar-right {
     display: flex;
     flex-flow: wrap;
     justify-content: right;
@@ -23,15 +23,17 @@
 
 }
 
-.navbar-links , .navbar-middle > span{
+.navbar-links, .navbar-middle > span{
     color: #121212;
     font-size: 1em;
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    list-style: none;
-    text-decoration: none;
+    letter-spacing: 0.2em; 
+
 }
+
+
+
 
 
 

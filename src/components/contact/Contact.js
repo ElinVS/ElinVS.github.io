@@ -7,17 +7,17 @@ const Contact = () => {
   return (
     <>
 
-      <section className='contact-page'>
+      <section className='contact-page' id='contact'>
         <div className='arrow-wrapper'>
-        <p>04 / get in touch</p>
+        <p>04 / say hello</p>
         
         <motion.div 
           className='contact-arrow'
         >
     
           <motion.svg 
-          whileHover={{y:40, x:-40 }}
-          transition={{type:'tween'}}
+          whileHover={{y:40, x:-40}}
+          transition={{type:'spring'}}
           initial="hidden"
           whileInView="visible"
           xmlns="http://www.w3.org/2000/svg" 

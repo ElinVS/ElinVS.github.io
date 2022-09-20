@@ -1,18 +1,20 @@
 .skills-page{
     min-height: 60vh;
     padding: 0em 3em 0em 3em;
+
 }
 
 line {
     stroke-width: 1px;
     stroke-linecap: round;
-    /* fill: transparent; */
+
   }
 
 .skills-wrapper{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+
 }
 
 .skills-container{
@@ -20,9 +22,10 @@ line {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-li , h3{
+.skills-container>ul> li , .skills-container> h3{
     color: #121212;
     font-size: 1.2rem;
     letter-spacing: 0.2em; 
@@ -37,5 +40,6 @@ li , h3{
     justify-content: center;
     align-items: center;
     width:200px;
-    height:200px
+    height:200px;
+    
 }

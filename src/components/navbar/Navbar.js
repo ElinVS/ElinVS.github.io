@@ -1,21 +1,18 @@
-import React, {useState, useEffect} from 'react'
-import {Link} from "react-router-dom"
-import{motion} from 'framer-motion'
+import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom"
+import { motion } from 'framer-motion'
+import { moveDown } from '../../animations/Variants'
 
 
 import '../navbar/style.css'
 
 const Navbar = () => {
 
-  const [time, setTime] = useState(new Date())
+  const [date, setDate] = useState(new Date())
 
   useEffect(() => {
-    setInterval(() => setTime(new Date()), 30000);
-}, []); 
-
-
-
-   
+    setInterval(() => setDate(new Date()), 30000);
+  }, []); 
 
   return (
     <>
@@ -23,53 +20,45 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='navbar-container'>
 
-        <motion.div className='navbar-left'
-        initial={{ y: -400 }}
-        animate={{ y: 0 }}
-        transition={{
-          duration: 1.2,
-          type: "spring",
-          ease: "easeInOut",
-          delay: 0.5,
-        }}
-        
-        >
-            <Link className="navbar-links"to="/"> home </Link>
-            <Link className="navbar-links" to="/contact"> contact </Link> 
-        </motion.div>
-
         <motion.div 
-        className='navbar-middle'
-        initial={{ y: -400 }}
-        animate={{ y: 0 }}
-        transition={{
-          duration: 1.2,
-          type: "spring",
-          ease: "easeInOut",
-          delay: 0.5,
-        }}
+          className='navbar-left'
+          initial='initial'
+          animate= 'animate'
+          variants={moveDown}
         >
-          <span>   {time.toLocaleString('en-US', {
-                hour: 'numeric',
-                minute: 'numeric',
-                hour12: true,
-            })}
+          <Link className="navbar-links"to="/"> home </Link>
+          <span>
+            <a href="#contact" className="navbar-links">contact</a>
           </span>
         </motion.div>
 
-        <motion.div className='navbar-right'
-         initial={{ y: -400 }}
-         animate={{ y: 0 }}
-         transition={{
-           duration: 1.2,
-           type: "spring",
-           ease: "easeInOut",
-           delay: 0.5,
-         }}
-        
+        <motion.div 
+          className='navbar-middle'
+          initial='initial'
+          animate= 'animate'
+          variants={moveDown}
         >
-            <Link className="navbar-links" to="/work"> work  </Link> 
-            <Link className="navbar-links" to="/skills"> skills  </Link>           
+          <span>   
+          {date.toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                })}
+          </span>
+        </motion.div>
+
+        <motion.div 
+          className='navbar-right'
+          initial='initial'
+          animate= 'animate'
+          variants={moveDown}
+        >
+          <span>
+            <a href="#work" className="navbar-links"> work </a>
+          </span>
+          <span>
+            <a href="#skills" className="navbar-links"> skills </a>
+          </span>          
         </motion.div>    
 
       </div>
