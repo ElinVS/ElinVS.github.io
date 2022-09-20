@@ -1,11 +1,24 @@
 import React from 'react'
-import ProjectHeader from '../../components/projects/ProjectHeader'
+import '../project01/style.css'
+import image1 from '../../assets/about/forrest.jpeg'
 
 
-const Project01 = ({projecttext}) => {
+const Project01 = ({}) => {
   return (
     <>
-      <ProjectHeader projecttext="matthew collings" />
+      <section className='project01-page'>
+
+        <div className='parallax-container'>
+
+        </div>
+        <div className='pink'>
+          
+        </div>
+
+    
+
+      </section>
+      
       
     </>
   )
