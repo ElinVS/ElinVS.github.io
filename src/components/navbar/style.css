@@ -14,7 +14,7 @@
     
 }
 
-.navbar-right , .navbar-left{
+.navbar-right , .navbar-left, .navbar-middle{
     display: flex;
     flex-flow: wrap;
     justify-content: right;
@@ -23,7 +23,7 @@
 
 }
 
-.navbar-links{
+.navbar-links , .navbar-middle > span{
     color: #121212;
     font-size: 1em;
     font-family: 'Heebo', sans-serif;

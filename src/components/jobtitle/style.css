@@ -38,8 +38,8 @@
 .arrow-container > svg{
     height:100px;
     width: 100px;
-    border-radius: 50%;
-    border: 1px solid #121212;
+    /* border-radius: 50%; */
+    /* border: 1px solid #121212; */
     padding:1em;  
       
 } 

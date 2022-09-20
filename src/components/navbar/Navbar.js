@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from "react-router-dom"
 import{motion} from 'framer-motion'
 
@@ -7,7 +7,11 @@ import '../navbar/style.css'
 
 const Navbar = () => {
 
+  const [time, setTime] = useState(new Date())
 
+  useEffect(() => {
+    setInterval(() => setTime(new Date()), 30000);
+}, []); 
 
 
 
@@ -32,6 +36,25 @@ const Navbar = () => {
         >
             <Link className="navbar-links"to="/"> home </Link>
             <Link className="navbar-links" to="/contact"> contact </Link> 
+        </motion.div>
+
+        <motion.div 
+        className='navbar-middle'
+        initial={{ y: -400 }}
+        animate={{ y: 0 }}
+        transition={{
+          duration: 1.2,
+          type: "spring",
+          ease: "easeInOut",
+          delay: 0.5,
+        }}
+        >
+          <span>   {time.toLocaleString('en-US', {
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true,
+            })}
+          </span>
         </motion.div>
 
         <motion.div className='navbar-right'
