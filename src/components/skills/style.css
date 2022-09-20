@@ -1,5 +1,5 @@
 .skills-page{
-    min-height: 90vh;
+    min-height: 60vh;
     padding: 0em 3em 0em 3em;
 }
 
@@ -36,6 +36,6 @@ li , h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100px;
-    height:100px
+    width:200px;
+    height:200px
 }

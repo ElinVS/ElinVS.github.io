@@ -42,6 +42,10 @@
     
 }
 
+.about-container > p> span{
+    font-style: italic;
+}
+
 .section-one >p{
     text-transform: uppercase;    
 

@@ -5,6 +5,7 @@ import About from '../../components/about/About'
 import Work from '../../components/work/Work'
 import Title from '../../components/jobtitle/Title'
 import Skills from '../../components/skills/Skills'
+import Contact from '../../components/contact/Contact'
 
 
 const HomePage = ({text, titletext}) => {
@@ -17,6 +18,7 @@ const HomePage = ({text, titletext}) => {
         <Work/>
         <About/>
         <Skills/>
+        <Contact />
         
       </section>
     </>

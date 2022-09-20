@@ -36,11 +36,9 @@
 
 
 .arrow-container > svg{
-    height:100px;
-    width: 100px;
-    /* border-radius: 50%; */
-    /* border: 1px solid #121212; */
-    padding:1em;  
+    height:200px;
+    width: 200px;
+    /* padding:1em;   */
       
 } 
 /* .arrow-container > svg:hover{

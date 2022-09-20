@@ -4,10 +4,10 @@ const Marquee = () => {
     return (
         <div className="marquee-w">
           <div className="marquee">
-            <span>matthew collings</span>
+            <span>04 / get in touch</span>
           </div>
           <div className="marquee marquee2">
-            <span>matthew collings</span>
+            <span>04 / get in touch</span>
           </div>
         </div>
       );

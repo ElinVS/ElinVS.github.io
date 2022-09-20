@@ -2,7 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { fadeUp,fadeUpChild } from '../../animations/Variants'
 import { SkillsData } from './SkillsData'
-import thumbs_up from '../../assets/about/thumbs-up.jpeg'
+
 
 import '../skills/style.css'
 
@@ -62,14 +62,15 @@ const draw = {
     <div className='skills-wrapper'>
         <div className='skills-container'>
         <div className='thumbs-up-container'>
-        
+
+
         <motion.svg 
         initial="hidden"
         whileInView="visible"
         xmlns="http://www.w3.org/2000/svg" 
         fill="none" 
         viewBox="0 0 24 24" 
-        stroke-width="0.5" 
+        stroke-width="0.2" 
         stroke="currentColor" 
         class="w-6 h-6">
           <motion.path 
