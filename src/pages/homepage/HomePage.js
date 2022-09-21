@@ -1,5 +1,6 @@
 import React from 'react'
 import '../homepage/style.css'
+import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header'
 import About from '../../components/about/About'
 import Work from '../../components/work/Work'
@@ -13,6 +14,7 @@ const HomePage = ({text, titletext}) => {
   return (
     <>
       <section className='home-page'>
+        <Navbar/>
         <Header text="elin svennberg "  />
         <Title titletext="creative developer"/>
         <Work />

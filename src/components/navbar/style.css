@@ -23,9 +23,26 @@
 
 }
 
-.navbar-links, .navbar-middle > span{
+.navbar-links, .navbar-middle > span {
     color: #121212;
     font-size: 1em;
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; 
+
+}
+
+.navbar-links button {
+    display:none
+}
+.navbar-links #hidden {
+    display:flex
+}
+
+.project-links{
+    color: #ffff;
+    font-size: 2em;
+    font-weight: 600;
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em; 
@@ -35,5 +52,46 @@
 
 
 
+@media only screen and (max-width:850px){
+    .navbar-links, .navbar-middle > span , .project-links {
+        font-size: 20px;
+    }
 
+}
+
+@media only screen and (max-width:750px){
+    .navbar-links, .navbar-middle > span , .project-links {
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width:650px){
+    .navbar-links, .navbar-middle > span , .project-links {
+        display:flex;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-links ,  #hidden{
+        position:absolute;
+        color:#121212;
+        background-color: rgb(242, 243, 237);
+        left:0px;
+        top:80px;
+        width:100%;
+        height:230px;
+        max-height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+
+    }
+
+  
+
+
+}
 

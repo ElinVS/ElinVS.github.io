@@ -1,7 +1,7 @@
 .project01-page{
     min-height: 100vh;
     padding: 0em 3em 3em 3em;
-    background-color: rgb(133, 83,66); 
+    background-color: rgb(80,71,62); 
 }
 .project02-page{
     min-height: 100vh;
@@ -14,13 +14,14 @@
     background-color: #d4c5a3; 
 }
 
+/*  */
+
 .project-header{
     width:100%;
     min-height: 20vh;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
     color: #ffff;
     font-size: 6rem;
     font-weight: 600;
@@ -43,8 +44,6 @@
     font-family: 'Heebo', sans-serif;
 
 }
-
-
 
 .img-grid-wrapper {
     display: grid;
@@ -119,8 +118,8 @@
         
         }
         
-        .next-project > svg{
-            width:200px;
-            height:200px
-        }
+ .next-project > svg{
+    width:200px;
+    height:200px
+}
         

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 import { moveDown } from '../../animations/Variants'
-
-
 import '../navbar/style.css'
 
 const Navbar = () => {
+
+  const [showLinks, setShowLinks] = useState(false);
 
   const [date, setDate] = useState(new Date())
 
@@ -22,13 +22,23 @@ const Navbar = () => {
 
         <motion.div 
           className='navbar-left'
+         
           initial='initial'
           animate= 'animate'
           variants={moveDown}
         >
-          <Link className="navbar-links"to="/"> home </Link>
+          <Link 
+          className="navbar-links"to="/"
+          id={showLinks ? 'hidden' : ""}
+          
+          
+          > home </Link>
           <span>
-            <a href="#contact" className="navbar-links">contact</a>
+            <a href="#contact" 
+            className="navbar-links"
+            id={showLinks ? 'hidden' : ""}
+            
+            >contact</a>
           </span>
         </motion.div>
 
@@ -54,12 +64,20 @@ const Navbar = () => {
           variants={moveDown}
         >
           <span>
-            <a href="#work" className="navbar-links"> work </a>
+            <a href="#work" 
+            className="navbar-links"
+            id={showLinks ? 'hidden' : ""}
+            > work </a>
           </span>
           <span>
-            <a href="#skills" className="navbar-links"> skills </a>
+            <a href="#skills" 
+            className="navbar-links"
+            id={showLinks ? 'hidden' : ""}
+            > skills </a>
           </span>          
-        </motion.div>    
+        </motion.div> 
+
+        <button>Open</button>   
 
       </div>
     </nav>
