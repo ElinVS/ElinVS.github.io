@@ -77,7 +77,7 @@ const Navbar = () => {
           </span>          
         </motion.div> 
 
-        <button>Open</button>   
+        {/* <button>Open</button>    */}
 
       </div>
     </nav>

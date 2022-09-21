@@ -27,8 +27,10 @@ const Title = ({titletext}) => {
         initial='initial'
         animate='animate'
         variants={moveUp}
+       
         >
         <motion.svg 
+          
           whileHover={{y:40}}
           transition={{type:'tween'}}
           initial="hidden"

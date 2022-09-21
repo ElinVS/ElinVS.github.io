@@ -18,7 +18,7 @@ const Work = () => {
         opacity: 1,
         transition: {
           pathLength: {  type: "spring", duration: 1.5, bounce: 0 },
-        //   opacity: { delay, duration: 0.01 }
+         
         }
       
     }
@@ -31,12 +31,9 @@ const Work = () => {
 
       <motion.div 
         className="div-title"
-        initial='initial'
-        variants={fadeUp}
-        animate='animate'
       > 
 
-<motion.svg
+    <motion.svg
       width="1000"
       height="10"
       viewBox="0 0 1000 10"
@@ -55,7 +52,7 @@ const Work = () => {
       </motion.svg>
 
         <motion.p 
-        variants={fadeUpChild}
+
         >01 / selected work</motion.p>  
       </motion.div>
 
@@ -107,9 +104,6 @@ const Work = () => {
 
       </div>
    
-
-        
-
 
     </motion.section>
 
