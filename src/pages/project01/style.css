@@ -3,6 +3,16 @@
     padding: 0em 3em 3em 3em;
     background-color: rgb(133, 83,66); 
 }
+.project02-page{
+    min-height: 100vh;
+    padding: 0em 3em 3em 3em;
+    background-color: rgb(69, 113,81); 
+}
+.project03-page{
+    min-height: 100vh;
+    padding: 0em 3em 3em 3em;
+    background-color: #d4c5a3; 
+}
 
 .project-header{
     width:100%;
@@ -25,43 +35,15 @@
     
 }
 
-.description-section >p{
+.description-section >p , .tech-description > span{
     color: #ffff;
     font-size: 1.2rem;
     font-weight: 100;
     letter-spacing: 0.2em; 
     font-family: 'Heebo', sans-serif;
-    
 
 }
 
-.tech-description{
-    width:100%;
-    min-height: 20vh;
-    display:flex;
-    flex-direction: row;
-}
-
-.next-project{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
-    color: #ffff;
-    font-size: 6rem;
-    font-weight: 600;
-    letter-spacing: 0.2em; 
-    font-family: 'Heebo', sans-serif;
-    font-style: italic;
-    text-transform: uppercase; 
-
-}
-
-.next-project > svg{
-    width:200px;
-    height:200px
-}
 
 
 .img-grid-wrapper {
@@ -74,13 +56,13 @@
     
     }
         
-        .a { grid-area: 1 / 1 / 3 / 2; 
+        .div1 { grid-area: 1 / 1 / 3 / 2; 
             background-image: url('/src/assets/about/jonkoping-beach.jpeg');
             background-size: cover;
             background-position: 100%;
             height:300px;
         }
-        .b { grid-area: 1 / 2 / 4 / 3; 
+        .div2 { grid-area: 1 / 2 / 4 / 3; 
             background-image: url('/src/assets/about/jonkoping-beach.jpeg');
             background-size: cover;
             background-position: 100%;
@@ -88,24 +70,57 @@
 
 
         }
-        .c { grid-area: 1 / 3 / 3 / 4;
-             
+        .div3 { 
+            grid-area: 1 / 3 / 3 / 4;
             background-image: url('/src/assets/about/jonkoping-beach.jpeg');
             background-size: cover;
             background-position: 100%;
         }
-        .d { grid-area: 3 / 1 / 5 / 2;
+        .div4 { 
+            grid-area: 3 / 1 / 5 / 2;
             background-image: url('/src/assets/about/jonkoping-beach.jpeg');
             background-size: cover;
             background-position: 100%;
          }
-        .e { grid-area: 3 / 3 / 5 / 4; 
+        .div5 { 
+            grid-area: 3 / 3 / 5 / 4; 
             background-image: url('/src/assets/about/jonkoping-beach.jpeg');
             background-size: cover;
             background-position: 100%;
         }
-        .f { grid-area: 4 / 2 / 6 / 3; 
+        .div6 { 
+            grid-area: 4 / 2 / 6 / 3; 
             background-image: url('/src/assets/about/jonkoping-beach.jpeg');
             background-size: cover;
             background-position: 100%;
         }
+
+        .tech-description{
+            width:100%;
+            min-height: 20vh;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .next-project{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffff;
+            font-size: 6rem;
+            font-weight: 600;
+            letter-spacing: 0.2em; 
+            font-family: 'Heebo', sans-serif;
+            font-style: italic;
+            text-transform: uppercase; 
+        
+        }
+        
+        .next-project > svg{
+            width:200px;
+            height:200px
+        }
+        
