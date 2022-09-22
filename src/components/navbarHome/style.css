@@ -57,10 +57,10 @@
     
 }
 
-.navbar .right-side #hidden{
+/* .navbar .right-side #hidden{
     display:flex;
    
-}
+} */
 
 
 
@@ -89,6 +89,14 @@
         display:none;
 
     }
+
+    .navbar .right-side span{
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
 
 
     .navbar .left-side #hidden{

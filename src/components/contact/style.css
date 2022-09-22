@@ -52,3 +52,26 @@
 
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-container{
+        min-height: 5vh;
+    }
+
+    .contact-container{
+        font-size: 1rem;
+    }
+    .arrow-wrapper{
+        font-size: 1rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .contact-arrow {
+       display: none;
+    }
+
+
+}
