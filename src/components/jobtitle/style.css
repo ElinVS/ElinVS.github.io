@@ -42,8 +42,76 @@
 } 
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .title-text{
+        font-size: 2rem;
+    }
+
+    .arrow-container > svg{
+        height:100px;
+        width: 100px;
+          
+    } 
+
+    .arrow-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+        
+    }
+    
 
 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .title-text{
+        font-size: 2rem;
+    }
+
+    .arrow-container > svg{
+        height:100px;
+        width: 100px;
+          
+    } 
+
+    .arrow-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+        
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .title-text{
+        font-size: 5rem;
+    }
+
+    .arrow-container > svg{
+        height:200px;
+        width: 200px;
+          
+    } 
+
+    .arrow-container{
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+       
+        
+    }
+
+
+}
 
 
 
