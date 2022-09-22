@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import { Link } from "react-router-dom"
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import '../navbarHome/style.css'
 
 const NavBarHome = () => {
 
     const [toggleNav, setToggleNav] = useState(false)
+
+      const [date, setDate] = useState(new Date())
+
+  useEffect(() => {
+    setInterval(() => setDate(new Date()), 30000);
+  }, []); 
 
 
   return (
@@ -29,12 +36,23 @@ const NavBarHome = () => {
                     
                 > skills </a>
                 </div>
-                <button onClick={() => setToggleNav (!toggleNav)}>HELLO</button>
+                <button onClick={() => setToggleNav (!toggleNav)}>
+                    <MenuOutlinedIcon
+                    
+                    />
+                </button>
             </div>
            
            
 
             <div className='right-side'>
+                <span>   
+            {date.toLocaleDateString('en-GB', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric',
+                    })}
+            </span>
               
             </div>
             
