@@ -18,7 +18,7 @@ const Work = () => {
         opacity: 1,
         transition: {
           pathLength: {  type: "spring", duration: 1.5, bounce: 0 },
-         
+
         }
       
     }
