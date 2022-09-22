@@ -6,11 +6,13 @@
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     display:flex;
+    
 
 }
 
-.navbar button {
-    display:none
+.navbar .left-side button {
+    display:none;
+    margin-right: 20px;
 
 }
 
@@ -19,16 +21,21 @@
     display:flex;
     justify-content: flex-start;
     align-items: flex-end;
-
     background-color: green;
 }
 
-.navbar .left-side .navbar-links {
+.navbar .left-side #hidden{
+    display:flex;
+   
+}
+
+.navbar .left-side .links a{
     max-height: 80px;
     font-size: 1em;
-    margin-left: 45px
+    margin-left: 45px;
+    
 }
-.navbar .right-side .navbar-links {
+.navbar .right-side .links a {
     max-height: 80px;
     font-size: 1em;
     margin-right: 45px
@@ -42,29 +49,23 @@
     background-color: orange;
 }
 
+.navbar .right-side #hidden{
+    display:flex;
+   
+}
+
 @media only screen and (max-width:850px) {
 
-    .navbar .left-side .navbar-links{
+    .navbar .left-side .links{
         font-size: 15px;
 
     }
-
-    .navbar .right-side .navbar-links{
-        font-size: 15px;
-
-    }
-
 
 }
 
 @media only screen and (max-width:750px) {
 
-    .navbar .left-side .navbar-links{
-        font-size: 10px;
-
-    }
-
-    .navbar .right-side .navbar-links{
+    .navbar .left-side .links{
         font-size: 10px;
 
     }
@@ -74,20 +75,38 @@
 
 @media only screen and (max-width:650px) {
 
-    .navbar button {
+    .navbar .left-side button {
         display:flex;
     
     }
 
-    .navbar .left-side .navbar-links{
+    .navbar .left-side .links{
         display:none;
 
     }
 
-    .navbar .right-side .navbar-links{
-        display:none;
+
+    .navbar .left-side #hidden{
+       position:absolute;
+       left:0px;
+       top:80px;
+       height: 230px;
+       width:100%;
+       background-color: dodgerblue;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
 
     }
+
+    .navbar .left-side #hidden a{
+        margin:10px;
+        font-size: 25px;
+
+
+    }
+
+    
 
 
 }

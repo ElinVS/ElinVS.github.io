@@ -12,18 +12,33 @@ const NavBarHome = () => {
         <nav className='navbar'>
             
             <div className='left-side'>
-                <Link className="navbar-links" to="/"> home </Link>
-                <a href="#contact" className="navbar-links">contact</a> 
-            </div>
-            <div className='right-side'>
-                <a href="#work" 
-                className="navbar-links"
+                <div className='links' id={toggleNav ? "hidden" : ""}>
+                <Link to="/" 
+                
+                > home </Link>
+                <a href="#contact" 
+                    
+                   
+                    >contact</a> 
+                  <a href="#work" 
+                    
+                    
                 > work </a>
                 <a href="#skills" 
-                className="navbar-links"
+                  
+                    
                 > skills </a>
+                </div>
+                <button onClick={() => setToggleNav (!toggleNav)}>HELLO</button>
             </div>
-            <button>HELLO</button>
+           
+           
+
+            <div className='right-side'>
+              
+            </div>
+            
+            
         </nav>
     
     
