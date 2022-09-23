@@ -34,9 +34,9 @@ const Work = () => {
       > 
 
     <motion.svg
-      width="1000"
+      
       height="10"
-      viewBox="0 0 1000 10"
+      
       initial="hidden"
       whileInView="visible"
     >
@@ -52,7 +52,6 @@ const Work = () => {
       </motion.svg>
 
         <motion.p 
-
         >01 / selected work</motion.p>  
       </motion.div>
 

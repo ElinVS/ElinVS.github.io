@@ -4,7 +4,7 @@
     
 }
 
-.div-title {
+.div-title > p {
     color: #121212;
     font-size: 1.2rem;
     font-weight: 600;
@@ -30,14 +30,6 @@
     
 }
 
-.work-selection :hover{
-   
-
-    animation: none;
-    
-}
-
-
 
 
 @keyframes marquee {
@@ -56,6 +48,7 @@
     font-family: 'Heebo', sans-serif; 
 
 }
+
 .work-selection >span {
     color: #121212;
     letter-spacing: 0.2em; 
@@ -82,7 +75,7 @@
 .feature:hover {
     opacity: 1;
     font-weight: 600;
-    /* text-transform: uppercase; */
+    
 }
 
 
@@ -108,6 +101,49 @@
 
   
 
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+
+    .work-page{
+        min-height:60vh;
+        padding: 0em 3em 0 3em;
+        
+    }
+
+
+    .work-grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    
+        }
+
+
+    .work-selection >p {
+        font-size: 1.6rem;
+       
+
+    }
+
+    .div-title > p {
+        font-size: 1.2rem;
+        
+        
+    }
+    .div-title  {
+        display: flex;
+        flex-direction: column;
+ 
+    }
+
+    .feature-text{
+        display:none;
+    }
+
+ 
+}
 
        
 

@@ -34,16 +34,14 @@ const draw = {
           whileInView='animate'
         > 
           <motion.svg
-            width="1000"
             height="10"
-            viewBox="0 0 1000 10"
             initial="hidden"
             whileInView="visible"
           >
             <motion.line
               x1="1"
               y1="10"
-              x2="135"
+              x2="137"
               y2="10"
               stroke="#121212"
               variants={draw}
@@ -87,7 +85,14 @@ const draw = {
             variants={fadeUp}
             whileInView='animate'
           >
+
+          
+
+
             <h3>Technical: </h3>
+
+
+            
               <ul
               variants={fadeUpChild}
               > 
@@ -101,6 +106,8 @@ const draw = {
 
           <div className='skills-container'>
             <h3>Technical: </h3>
+
+
               <ul> 
                 {SkillsData.Technical.map((skill, index) => {
                   return <li key={index}>{skill}</li>;
