@@ -81,7 +81,7 @@ line {
 
    
 }
-@media only screen and (min-width: 481px) {
+@media only screen and (max-width: 600px) {
 
 .skills-wrapper{
     display: grid;
@@ -118,18 +118,18 @@ line {
 
    
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 780px) {
 
 .skills-wrapper{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
 
 }
 
 .skills-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start; 
    
@@ -147,23 +147,11 @@ line {
 }
 
 .thumbs-up-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  
+   display: none;
     
 }
 
-.thumbs-up-container > svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-   width:200px;
-   height: 200px
-    
-}
+
 
    
 }
-

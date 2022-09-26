@@ -38,7 +38,7 @@
     color: #121212;
     font-family: 'Inter', sans-serif;
     font-size: 4rem;
-    line-height: 90%;
+    line-height: 120%;
     letter-spacing: 0.08em;    
     font-weight: 600;
     margin:  0;
@@ -94,44 +94,11 @@
 }
 
 }
+
+
+
 /* Extra small devices (phones, 480px and up) */
-@media only screen and (min-width: 481px) {
-    .header-container{
-        min-height: 5vh;
-    }
-
-    .contact-container{
-        font-size: 1rem;
-    }
-    .arrow-wrapper{
-       
-       
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-
-    .arrow-wrapper > p{
-        font-size: 1rem;
-        width:none;
-        font-family: 'Heebo', sans-serif;
-        flex-direction: row;
-
-    }
-
-    .arrow-wrapper > svg{
-        display:flex;
-    }
-
-    .contact-arrow {
-     display:none;
-
-
-}
-
-}
-/* Extra small devices (phones, 480px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .header-container{
         min-height: 5vh;
     }
