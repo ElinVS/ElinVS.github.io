@@ -27,8 +27,31 @@
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    list-style: none;
-    text-decoration: none;
+    
 
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+
+   .footer-container{
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    
+   }
+
+   .footer-left > p , .footer-right > p{
+    
+    font-size: 1em; 
+    gap:0em;
+    
+
+}
+
+
+   
+
+ 
 }
 

@@ -90,6 +90,42 @@
         width:300px;
         height:600px;
 
+    }  
+
+    .portrait-img-wrapper> p{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    
+       
+    }
+@media only screen and (max-width: 800px) {
+
+    .grid-wrapper{
+
+        flex-direction: column;
+        /* justify-content: space-around;
+        align-items: center;
+        column-gap: 20px; */
+    
+    }
+
+    .about-container > p , .section-one > p, .portrait-img-wrapper >p {
+        
+        font-size: 1rem;
+        
+    }
+
+    .about-container{
+        width:300px;
+        height:600px;
+
+    }  
+
+    .portrait-img-wrapper> p{
+        font-size: 1.2rem;
+        font-weight: 600;
     }
     
     

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import '../about/style.css'
 import { AboutData } from './AboutData'
-import { fadeUp, fadeUpChild } from '../../animations/Variants'
+import { fadeUp, fadeUpChild, draw } from '../../animations/Variants'
 import edinburgh  from '../../assets/about/edinburgh1.jpeg'
 import reykjavik from '../../assets/about/volcano.jpeg'
 import jonkoping from '../../assets/about/forrest.jpeg'
@@ -64,10 +64,27 @@ const About = () => {
       initial='initial' 
       whileInView='animate'
       >
+          <motion.svg
+      
+      height="10"
+      
+      initial="hidden"
+      whileInView="visible"
+    >
+       <motion.line
+        x1="1"
+        y1="10"
+        x2="300"
+        y2="10"
+        stroke="#121212"
+        variants={draw}
+        // custom={0.5}
+      />
+      </motion.svg>
 
       <motion.p
       variants={fadeUpChild}
-      > 02 / HELLO</motion.p>
+      > 02 / ABOUT </motion.p>
         
       <motion.div 
         className='img'
@@ -75,6 +92,8 @@ const About = () => {
       >
         <img src={image} width={300} height={300}/>
       </motion.div>
+
+    
 
       <motion.p
       variants={fadeUpChild}

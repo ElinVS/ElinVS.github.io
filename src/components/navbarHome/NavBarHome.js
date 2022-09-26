@@ -55,8 +55,6 @@ const NavBarHome = () => {
             </span>
               
             </div>
-            
-            
         </nav>
     
     

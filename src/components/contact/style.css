@@ -18,11 +18,15 @@
     letter-spacing: 0.08em;    
     font-weight: 600;
     margin:  0;
-    width: calc(100% - 150px);
+    /* width: calc(100% - 150px); */
     height: auto;
     text-transform: uppercase;
     font-style: italic;
 
+}
+
+.arrow-wrapper > svg{
+    display:none;
 }
 
 
@@ -52,8 +56,46 @@
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    .header-container{
+        min-height: 5vh;
+    }
+
+    .contact-container{
+        font-size: 1rem;
+        line-height: 150%;
+    }
+    .arrow-wrapper{
+       
+       
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .arrow-wrapper > p{
+        font-size: 1.2rem;
+        width:none;
+        font-family: 'Heebo', sans-serif;
+        flex-direction: row;
+        font-style:normal;
+
+    }
+
+    .arrow-wrapper > svg{
+        display:flex;
+    }
+
+    .contact-arrow {
+     display:none;
+
+
+}
+
+}
+/* Extra small devices (phones, 480px and up) */
+@media only screen and (min-width: 481px) {
     .header-container{
         min-height: 5vh;
     }
@@ -62,16 +104,67 @@
         font-size: 1rem;
     }
     .arrow-wrapper{
-        font-size: 1rem;
-        display:flex;
+       
+       
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
     }
 
-    .contact-arrow {
-       display: none;
+    .arrow-wrapper > p{
+        font-size: 1rem;
+        width:none;
+        font-family: 'Heebo', sans-serif;
+        flex-direction: row;
+
     }
+
+    .arrow-wrapper > svg{
+        display:flex;
+    }
+
+    .contact-arrow {
+     display:none;
 
 
 }
+
+}
+/* Extra small devices (phones, 480px and up) */
+@media only screen and (min-width: 600px) {
+    .header-container{
+        min-height: 5vh;
+    }
+
+    .contact-container{
+        font-size: 1.8rem;
+        line-height: 150%;
+    }
+
+    .arrow-wrapper{
+       
+       
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .arrow-wrapper > p{
+        font-family: 'Inter', sans-serif;
+        font-size: 3rem;
+        
+
+    }
+
+    .arrow-wrapper > svg{
+        display:flex;
+    }
+
+    .contact-arrow {
+     display:none;
+
+
+}
+
+}
+

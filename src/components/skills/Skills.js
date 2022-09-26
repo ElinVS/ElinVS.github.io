@@ -41,7 +41,7 @@ const draw = {
             <motion.line
               x1="1"
               y1="10"
-              x2="137"
+              x2="300"
               y2="10"
               stroke="#121212"
               variants={draw}
