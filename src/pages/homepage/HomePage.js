@@ -1,14 +1,14 @@
 import React from 'react'
 import '../homepage/style.css'
 // import Navbar from '../../components/navbar/Navbar';
+import NavBarHome from '../../components/navbarHome/NavBarHome'
 import Header from '../../components/header/Header'
-import About from '../../components/about/About'
-import Work from '../../components/work/Work'
 import Title from '../../components/jobtitle/Title'
+import Work from '../../components/work/Work'
+import About from '../../components/about/About'
 import Skills from '../../components/skills/Skills'
 import Contact from '../../components/contact/Contact'
-import NavBarHome from '../../components/navbarHome/NavBarHome'
-
+import Footer from '../../components/footer/Footer';
 
 const HomePage = ({text, titletext}) => {
   
@@ -23,7 +23,8 @@ const HomePage = ({text, titletext}) => {
         <Work />
         <About/>
         <Skills />
-        {/* <Contact /> */}
+        <Contact />
+        <Footer />
         
       </section>
     </>

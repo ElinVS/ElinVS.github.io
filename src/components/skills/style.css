@@ -44,114 +44,171 @@ line {
     
 }
 
-@media only screen and (max-width: 480px) {
-
-.skills-wrapper{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-
-}
-
-.skills-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start; 
-   
-
-}
-
-.skills-container > ul > li , .skills-container > h3{
-    
-    font-size: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-   
-
-}
-
-.thumbs-up-container {
-   display: none;
-    
-}
 
 
 
-   
-}
+
+/* -----------------MEDIA QUERIES--------------- */
+
+
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-.skills-wrapper{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-
-}
-
-.skills-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start; 
-   
-
-}
-
-.skills-container > ul > li , .skills-container > h3{
+    .skills-page{
+        padding: 0em 2em 0em 2em;
     
-    font-size: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-   
+    }
 
-}
+    .skills-wrapper{
 
-.thumbs-up-container {
-   display: none;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
     
-}
-
-
-
-   
-}
-@media only screen and (max-width: 780px) {
-
-.skills-wrapper{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-
-}
-
-.skills-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start; 
-   
-
-}
-
-.skills-container > ul > li , .skills-container > h3{
+    }
     
-    font-size: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-   
-
-}
-
-.thumbs-up-container {
-   display: none;
+    .skills-container{
+        
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start; 
+       
     
-}
+    }
+    
+    .skills-container > ul > li , .skills-container > h3{
+        
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       
+    
+    }
+    
+    .thumbs-up-container {
+       display: none;
+        
+    }
 
+  
 
-
+  
    
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .skills-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    
+    }
+    
+    .skills-container{
+
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start; 
+       
+    
+    }
+    
+    .skills-container > ul > li , .skills-container > h3{
+        
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       
+    
+    }
+    
+    .thumbs-up-container {
+       display: flex;
+        
+    }
+
+   
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .skills-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    
+    }
+    
+    .skills-container{
+        
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start; 
+       
+    
+    }
+    
+    .skills-container > ul > li , .skills-container > h3{
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       
+    
+    }
+    
+    .thumbs-up-container {
+       display: flex;
+        
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .skills-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    
+    }
+    
+    .skills-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    
+    }
+    
+    .skills-container > ul > li , .skills-container > h3{
+        
+        font-size: 1.2rem;  
+    
+    }
+    
+
+    .thumbs-up-container {
+       display: flex;
+        
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    
+
+
+}
+
+

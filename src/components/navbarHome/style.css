@@ -10,8 +10,9 @@
     display:flex;
     position: fixed;
     
-
 }
+
+
 
 .navbar .left-side button {
     display:none;
@@ -62,7 +63,7 @@
    
 } */
 
-/* MEDIA QUERIES */
+/* ------ MEDIA QUERIES ------ */
 
 @media only screen and (max-width:850px) {
 
@@ -78,6 +79,8 @@
 
 }
 
+
+
 @media only screen and (max-width:650px) {
 
     .navbar{
@@ -86,6 +89,7 @@
 
     .navbar .left-side button {
         display:flex;
+        padding-left: 2.2em
     
     }
 
@@ -99,8 +103,6 @@
        
 
     }
-
-
 
     .navbar .left-side #hidden{
        position:absolute;
@@ -128,3 +130,4 @@
 
 
 }
+

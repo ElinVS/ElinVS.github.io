@@ -5,7 +5,7 @@ import './App.css';
 
 import HomePage from './pages/homepage/HomePage';
 import Work from './components/work/Work';
-import Footer from './components/footer/Footer';
+
 import Project01 from './pages/project01/Project01';
 import Project02 from './pages/project02/Project02';
 import Project03 from './pages/project03/Project03';
@@ -58,7 +58,7 @@ function App() {
 
       </Routes>
       
-      {/* <Footer /> */}
+     
 
       </Router>
 
