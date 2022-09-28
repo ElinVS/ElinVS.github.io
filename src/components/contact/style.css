@@ -64,7 +64,7 @@
 
     .contact-container{
         font-size: 1rem;
-        line-height: 150%;
+       
     }
     .arrow-wrapper{
        
@@ -104,8 +104,8 @@
     }
 
     .contact-container{
-        font-size: 1.8rem;
-        line-height: 150%;
+        font-size: 1rem;
+        
     }
 
     .arrow-wrapper{
@@ -119,6 +119,44 @@
     .arrow-wrapper > p{
         font-family: 'Inter', sans-serif;
         font-size: 3rem;
+        
+
+    }
+
+    .arrow-wrapper > svg{
+        display:flex;
+    }
+
+    .contact-arrow {
+     display:none;
+
+
+}
+
+}
+/* Extra small devices (phones, 480px and up) */
+@media only screen and (max-width: 780px) {
+    .header-container{
+        min-height: 5vh;
+    }
+
+    .contact-container{
+        font-size: 4rem;
+        
+    }
+
+    .arrow-wrapper{
+       
+       
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .arrow-wrapper > p{
+        font-family: 'Inter', sans-serif;
+        font-size: 3rem;
+        line-height: 10%;
         
 
     }

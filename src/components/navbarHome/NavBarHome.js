@@ -1,5 +1,7 @@
 import React, { useState , useEffect} from 'react'
 import { Link } from "react-router-dom"
+import { moveDown } from '../../animations/Variants';
+import { motion } from 'framer-motion'
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import '../navbarHome/style.css'
 
@@ -18,7 +20,12 @@ const NavBarHome = () => {
     <>
         <nav className='navbar'>
             
-            <div className='left-side'>
+            <motion.div 
+              className='left-side'
+              initial='initial'
+              animate= 'animate'
+              variants={moveDown}
+              >
                 <div className='links' id={toggleNav ? "hidden" : ""}>
                 <Link to="/" 
                 
@@ -41,7 +48,7 @@ const NavBarHome = () => {
                     
                     />
                 </button>
-            </div>
+            </motion.div>
            
            
 

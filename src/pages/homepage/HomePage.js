@@ -23,7 +23,7 @@ const HomePage = ({text, titletext}) => {
         <Work />
         <About/>
         <Skills />
-        <Contact />
+        {/* <Contact /> */}
         
       </section>
     </>

@@ -61,7 +61,7 @@ const Work = () => {
         <Link to='/project01' className="work-link">
           <motion.div 
           className='work-selection'
-          whileHover={{x:80}}
+          whileHover={{x:10}}
           transition={{type:'tween'}}
           >
             <p>matthew collings</p> 
@@ -75,7 +75,7 @@ const Work = () => {
         <Link to='/project02' className="work-link">
           <motion.div 
           className='work-selection'
-          whileHover={{x:80}}
+          whileHover={{x:10}}
           transition={{type:'tween'}}
           >
             <p>mind space</p> 
@@ -89,7 +89,7 @@ const Work = () => {
         <Link to='/project03' className="work-link">
           <motion.div 
           className='work-selection'
-          whileHover={{x:80}}
+          whileHover={{x:10}}
           transition={{type:'tween'}}
           >
             <p>erik</p> 

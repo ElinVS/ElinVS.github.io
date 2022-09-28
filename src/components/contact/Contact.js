@@ -58,8 +58,8 @@ const Contact = () => {
         <div className='contact-wrapper'>
           <div className='contact-container'>
           
-          <span>elinvsvennberg@gmail.com</span>
-          <span>linkedin</span>
+          <p>elinvsvennberg @gmail.com</p>
+          <p>linkedin</p>
     
         </div>
         

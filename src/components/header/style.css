@@ -7,6 +7,7 @@
     flex-flow: wrap;
     justify-content: flex-start;
     align-items: flex-start; 
+   
     
 }
 
@@ -24,75 +25,73 @@
     
 }
 
+/* -----------------MEDIA QUERIES--------------- */
 
 
-
-
-
-
-/* Extra small devices (phones, 480px and down) */
-@media only screen and (max-width: 480px) {
-    .header-container{
-        min-height: 5vh;
-    }
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .header-text{
-        font-size: 3rem;
-        
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 480px and up) */
-@media only screen and (min-width: 480px) {
-    .header-text{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .header-text{
-        font-size: 5rem;
+        font-size: 4rem;
     }
+
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
     .header-text{
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
- 
 }
-
-@media only screen and (min-width: 790px) {
-    .header-text{
-        font-size: 4rem;
-    }
-
- 
-}
-@media only screen and (min-width: 900px) {
-    .header-text{
-        font-size: 5rem;
-    }
-
- 
-}
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+
     .header-text{
-        font-size: 8.6rem;
+        font-size: 8.3rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .header-text{
+        font-size: 8.3rem;
     }
 
 
-
-   
-
-
 }
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+
 
 
 
