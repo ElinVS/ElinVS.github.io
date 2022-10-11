@@ -7,7 +7,7 @@ import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 
 
-const Project02 = () => {
+const Project02 = ({theme, navTheme}) => {
 
   const [text, setText] = useState('next project')
 
@@ -25,8 +25,8 @@ const Project02 = () => {
   return (
     <>
 
-      <NavbarProject/>
-      <section className='project02-page'>
+<NavbarProject navTheme={navTheme}/>
+      <section className='project02-page'  id={theme}>
 
      
   
@@ -37,12 +37,13 @@ const Project02 = () => {
     variants={fadeInLeft}
     > 
     <motion.p
+      id={theme}
       variants={fadeUpChild}
     > project02 / mind space</motion.p>
   </motion.header>
 
   <section className='description-section'>
-    <p>Lorem ipsum dolor sit amet. Ut fuga omnis ex facilis facilis hic beatae obcaecati est aperiam quaerat rem internos consequatur sed blanditiis laboriosam nam enim molestiae. Sit obcaecati facere est impedit doloribus est culpa cupiditate non vero nemo? Est molestiae eveniet et nemo officia est mollitia illo? </p><p>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
+    <p  id={theme}>Lorem ipsum dolor sit amet. Ut fuga omnis ex facilis facilis hic beatae obcaecati est aperiam quaerat rem internos consequatur sed blanditiis laboriosam nam enim molestiae. Sit obcaecati facere est impedit doloribus est culpa cupiditate non vero nemo? Est molestiae eveniet et nemo officia est mollitia illo? </p><p>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
   </section>
 
 
@@ -66,7 +67,7 @@ const Project02 = () => {
     ></motion.div>
     <div className='div5'></div>
     <div className='div6'></div>
-    <span>@github</span>
+    <span  id={theme}>@github</span>
   </motion.div>
 
   <motion.section 
@@ -100,7 +101,7 @@ const Project02 = () => {
       onMouseLeave={defaultState}
     >
 
-    <Link className="next-project-links" to="/project03">
+    <Link className="next-project-links"  id={theme} to="/project03">
       {text}
     </Link>
     
@@ -109,13 +110,14 @@ const Project02 = () => {
     </motion.span>
 
     <motion.svg 
+      id={theme}
       initial='hidden'
       whileInView='visible'
       xmlns="http://www.w3.org/2000/svg" 
       fill="none" 
       viewBox="0 0 24 24" 
       strokeWidth="0.3" 
-      stroke="white" 
+      stroke="currentColor" 
       
     >
       <motion.path 

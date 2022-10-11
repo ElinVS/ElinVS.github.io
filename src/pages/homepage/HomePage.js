@@ -1,4 +1,4 @@
-import React, {useState, createContext}from 'react'
+import React from 'react'
 import '../homepage/style.css'
 // import Navbar from '../../components/navbar/Navbar';
 import NavBarHome from '../../components/navbarHome/NavBarHome'
@@ -10,25 +10,14 @@ import Skills from '../../components/skills/Skills'
 import Contact from '../../components/contact/Contact'
 import Footer from '../../components/footer/Footer';
 
-export const ThemeContext = createContext(null)
 
-const HomePage = ({text, titletext}) => {
 
-  const [theme, setTheme] = useState('light')
-  const [navTheme, setNavTheme] = useState ('light-nav')
-  const [word, setWord] = useState('dark')
+const HomePage = ({text, titletext, theme, navTheme, word, setWord, toggleTheme}) => {
 
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === 'light' ? 'dark': 'light'))
-    setWord((curr) => (curr === 'dark' ? 'light': 'dark'))
-    setNavTheme((curr) => (curr === 'light-nav' ? 'dark-nav': 'light-nav'))
-  }
-
-  
   
   return (
     <>
-      <ThemeContext.Provider value={{theme, toggleTheme}}>
+
         <section className='home-page' id={theme}>
           <NavBarHome navTheme={navTheme} />
         
@@ -41,15 +30,8 @@ const HomePage = ({text, titletext}) => {
           <Contact theme={theme} />
           <Footer theme={theme}  toggleTheme={toggleTheme} word={word} setWord={setWord}/>
 
-
-    
-          
         </section>
 
-
-
-
-      </ThemeContext.Provider>
     </>
   )
 }

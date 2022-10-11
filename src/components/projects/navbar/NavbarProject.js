@@ -5,7 +5,7 @@ import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild, moveDown } from
 import '../../projects/navbar/style.css'
 
 
-const NavbarProject = () => {
+const NavbarProject = ({navTheme}) => {
   return (
     <>
         <nav className='navbar-project'>
@@ -13,11 +13,12 @@ const NavbarProject = () => {
 
                 <motion.div 
                 className='navbar-left'
+                
                 initial='initial'
                 animate= 'animate'
                 variants={moveDown}
                 >
-                <Link className="project-links"to="/"> home </Link>
+                <Link className="project-links" id={navTheme} to="/" > home </Link>
                 </motion.div>
 
             

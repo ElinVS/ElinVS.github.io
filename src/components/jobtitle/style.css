@@ -31,9 +31,9 @@
 .arrow-container{
     min-height: 30vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: flex-start;
-    padding:0em 0em 0 2em;
+    padding:0em 8em 0 2em;
     
 }
 

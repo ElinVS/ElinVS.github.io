@@ -31,17 +31,7 @@ const Title = ({titletext, theme}) => {
        
         >
 
-    <motion.div
-      className='statement-div'
-      
-    
-    >
-
-  <p id={theme}>I have a fondness for human centered design, websites crafted into memorable creations and dogs with little legs</p>
-
-
-
-    </motion.div>
+ 
 
 
 

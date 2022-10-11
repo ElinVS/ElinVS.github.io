@@ -8,7 +8,7 @@ import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 
 
-const Project01 = ({}) => {
+const Project01 = ({theme, navTheme}) => {
 
   const [text, setText] = useState('next project')
 
@@ -24,8 +24,10 @@ const Project01 = ({}) => {
   return (
     <>
 
-      <NavbarProject/>
-      <section className='project01-page'>
+      <NavbarProject navTheme={navTheme}/>
+      <section className='project01-page'
+      id={theme}
+      >
   
         <motion.header 
           className="project-header"
@@ -37,12 +39,13 @@ const Project01 = ({}) => {
 
           <motion.p
             variants={fadeUpChild}
+            id={theme}
           
           > project01 / Matthew Collings</motion.p>
         </motion.header>
 
         <section className='description-section'>
-          <p>Lorem ipsum dolor sit amet. Ut fuga omnis ex facilis facilis hic beatae obcaecati est aperiam quaerat rem internos consequatur sed blanditiis laboriosam nam enim molestiae. Sit obcaecati facere est impedit doloribus est culpa cupiditate non vero nemo? Est molestiae eveniet et nemo officia est mollitia illo? </p><p>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
+          <p  id={theme}>Lorem ipsum dolor sit amet. Ut fuga omnis ex facilis facilis hic beatae obcaecati est aperiam quaerat rem internos consequatur sed blanditiis laboriosam nam enim molestiae. Sit obcaecati facere est impedit doloribus est culpa cupiditate non vero nemo? Est molestiae eveniet et nemo officia est mollitia illo? </p><p>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
         </section>
     
 
@@ -66,7 +69,7 @@ const Project01 = ({}) => {
           ></motion.div>
           <div className='div5'></div>
           <div className='div6'></div>
-          <span>@github</span>
+          <span  id={theme}>@github</span>
         </motion.div>
 
         <motion.section 
@@ -77,6 +80,7 @@ const Project01 = ({}) => {
           
           {ProjectData.techstack01.map((tech, index)=> {
             return <motion.span
+                    id={theme}
                     variants={fadeUpChild}
                     key={index}
                 > {tech}</motion.span>
@@ -100,20 +104,21 @@ const Project01 = ({}) => {
             onMouseLeave={defaultState}
             
           >
-            <Link className="next-project-links" to="/project02">
+            <Link className="next-project-links"  id={theme} to="/project02">
                {text}
             </Link>
             
           </motion.span>
 
           <motion.svg 
+            id={theme}
             initial='hidden'
             whileInView='visible'
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" 
             viewBox="0 0 24 24" 
             strokeWidth="0.3" 
-            stroke="white" 
+            stroke="currentColor" 
           >
             <motion.path 
               variants={draw}
@@ -121,10 +126,7 @@ const Project01 = ({}) => {
               strokeLinejoin="round" 
               d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </motion.svg>
-
         </motion.section>
-       
-
 
       </section>
       
