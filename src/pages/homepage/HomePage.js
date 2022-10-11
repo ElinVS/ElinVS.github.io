@@ -19,7 +19,7 @@ const HomePage = ({text, titletext, theme, navTheme, word, setWord, toggleTheme}
     <>
 
         <section className='home-page' id={theme}>
-          <NavBarHome navTheme={navTheme} />
+          <NavBarHome navTheme={navTheme} toggleTheme={toggleTheme} word={word} />
         
           {/* <Navbar/> */}
           <Header text="elin svennberg " theme={theme} />

@@ -6,6 +6,7 @@ import './style.css'
 import image1 from '../../assets/about/forrest.jpeg'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
+import Footer from '../../components/footer/Footer'
 
 
 const Project01 = ({theme, navTheme}) => {
@@ -129,6 +130,8 @@ const Project01 = ({theme, navTheme}) => {
         </motion.section>
 
       </section>
+
+      <Footer/>
       
       
     </>
