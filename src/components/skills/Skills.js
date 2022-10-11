@@ -88,50 +88,42 @@ const draw = {
             whileInView='animate'
           >
 
-          
-
 
             <h3  id={theme}>Technical: </h3>
 
-
-            
-              <ul
-
-              variants={fadeUpChild}
-              > 
                 {SkillsData.Technical.map((skill, index) => {
-                  return <li 
+                  return <span
                           id={theme}
                           key={index}
-                          >{skill}</li>;
+                          >{skill}</span>;
                 })}
-              </ul>
+              
           </div>
 
           <div className='skills-container' >
             <h3  id={theme}>Technical: </h3>
 
 
-              <ul> 
+              
                 {SkillsData.Technical.map((skill, index) => {
-                  return <li 
+                  return <span
                           id={theme}
                           key={index}
-                          >{skill}</li>;
+                          >{skill}</span>;
                 })}
-              </ul>
+              
           </div>
 
           <div className='skills-container'>
-            <h3  id={theme}>Technical: </h3>
-              <ul> 
-                {SkillsData.Technical.map((skill, index) => {
-                  return <li  
+            <h3  id={theme}>Extra: </h3>
+              
+                {SkillsData.Extra.map((skill, index) => {
+                  return <span  
                           id={theme}
                           key={index}
-                          >{skill}</li>;
+                          >{skill}</span>;
                 })}
-              </ul>
+              
           </div>
           
         </div>

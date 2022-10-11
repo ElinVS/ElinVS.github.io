@@ -32,19 +32,26 @@ const Title = ({titletext, theme}) => {
         >
 
  
+        
 
 
-
-    <svg xmlns="http://www.w3.org/2000/svg" 
+    <motion.svg
+      whileHover={{y:40}}
+      transition={{type:'tween'}}
+      initial="hidden"
+      whileInView="visible" 
+      xmlns="http://www.w3.org/2000/svg" 
       fill="none" 
       viewBox="0 0 24 24" 
-      stroke-width="1.5" 
+      stroke-width="0.2" 
       stroke="currentColor" 
       class="w-6 h-6">
-      <path stroke-linecap="round" 
+      <motion.path 
+      variants={draw}
+      stroke-linecap="round" 
       stroke-linejoin="round" 
       d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
-    </svg>
+    </motion.svg>
 
 
 

@@ -28,11 +28,11 @@ const NavBarHome = ({navTheme, theme, toggleTheme, word}) => {
               >
                 <div  className='links' id={ toggleNav ? "hidden"  : ""} >
                 
-                  <a id={navTheme} href="#contact" 
+                  <a id={navTheme} onClick={() => setToggleNav (!toggleNav)} href="#contact" 
                     >contact</a> 
-                  <a id={navTheme}  href="#work" 
+                  <a id={navTheme}  onClick={() => setToggleNav (!toggleNav)} href="#work" 
                   > work </a>
-                  <a id={navTheme}  href="#skills" 
+                  <a id={navTheme} onClick={() => setToggleNav (!toggleNav)}  href="#skills" 
                     
                 > skills </a>
                 </div>
@@ -44,20 +44,24 @@ const NavBarHome = ({navTheme, theme, toggleTheme, word}) => {
            
             
 
-            <div className='right-side' id={navTheme} >
+            <motion.div 
+                initial='initial'
+                animate= 'animate'
+                variants={moveDown}
+              className='right-side' 
+              id={navTheme} >
           
-                    <span id={navTheme} onClick={toggleTheme}> {word} </span>
+                <span id={navTheme} onClick={toggleTheme}> {word} </span>
 
-                
                 <span>   
-            {date.toLocaleDateString('en-GB', {
+                  {date.toLocaleDateString('en-GB', {
                         day: 'numeric',
                         month: 'short',
                         year: 'numeric',
                     })}
             </span>
               
-            </div>
+            </motion.div>
         </nav>
     
     

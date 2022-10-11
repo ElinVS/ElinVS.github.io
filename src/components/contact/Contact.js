@@ -61,16 +61,16 @@ const Contact = ({theme}) => {
 
     
           <motion.svg 
-          
-          whileHover={{y:40, x:-40}}
-          transition={{type:'spring'}}
-          initial="hidden"
-          whileInView="visible"
-          xmlns="http://www.w3.org/2000/svg" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          strokeWidth="0.2" 
-          stroke="currentColor" 
+            id={theme}
+            whileHover={{y:40, x:-40}}
+            transition={{type:'spring'}}
+            initial="hidden"
+            whileInView="visible"
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            strokeWidth="0.2" 
+            stroke="currentColor" 
           >
               <motion.path 
                variants={draw}

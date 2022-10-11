@@ -100,15 +100,12 @@ const About = ({theme}) => {
       <motion.p
       variants={fadeUpChild}
       id={theme}
-     
       > tokyo 2019</motion.p>
     </motion.div>
     
 
     <motion.div 
       className='about-container'
-      
-
       variants={fadeUp}
       initial='initial'
       whileInView='animate'
@@ -126,7 +123,7 @@ const About = ({theme}) => {
       </motion.p>
 
       <motion.p
-       id={theme}
+        id={theme}
         variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>
@@ -144,13 +141,7 @@ const About = ({theme}) => {
       </motion.p>
 
     </motion.div>
-
     </div>
-
-
-
-
-
     </section>
     
     </>
