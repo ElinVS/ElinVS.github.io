@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import '../project01/style.css'
 import {motion} from 'framer-motion'
 import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild } from '../../animations/Variants'
@@ -81,7 +82,13 @@ className='img-grid-wrapper'
 
   <motion.span
     variants={fadeInLeftChild}
-  >next project</motion.span>
+  >
+    
+    <Link className="next-project-links" to="/">
+               Home
+            </Link>
+    
+    </motion.span>
 
   <motion.svg 
     initial='hidden'

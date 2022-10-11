@@ -124,9 +124,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .contact-container {
+    .contact-container  {
         font-size: 4rem;
-        line-height: 120%;
+        line-height: 100%;
 
     }
    

@@ -9,6 +9,7 @@
     letter-spacing: 0.2em; 
     display:flex;
     position: fixed;
+   
     
 }
 
@@ -56,6 +57,10 @@
     max-height: 80px;
     font-size: 1em;
     
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* .navbar .right-side #hidden{

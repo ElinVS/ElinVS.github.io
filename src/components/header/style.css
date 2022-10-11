@@ -1,28 +1,33 @@
 
 .header-container{
-    min-height: 20vh;
-    max-width: 100%;
-    padding:9em 0 0 2em;    
+    
+    padding:9em 2em 0 2em;    
     display:flex;
     flex-flow: wrap;
     justify-content: flex-start;
     align-items: flex-start; 
-   
-    
+  
 }
 
-.header-text{
+.styling-div {
+    border-top:1px solid #121212;
+    border-bottom:1px solid #121212;
+    padding: 3em;
+
+}
+
+.header-name-text{
     color: #121212;
     font-family: 'Inter', sans-serif;
-    font-size: 8.3rem;
+    font-size: 9rem;
     line-height: 90%;
-    letter-spacing: 0.08em;    
-    font-weight: 100;
+    letter-spacing: -0.1em;    
+    font-weight: 00;
     margin:  0;
     width: calc(100% - 150px);
     height: auto;
     text-transform: uppercase;
-    
+
 }
 
 /* -----------------MEDIA QUERIES--------------- */
@@ -30,14 +35,14 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .header-text{
-        font-size: 2rem;
+    .header-name-text{
+        font-size: 3rem;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .header-text{
+    .header-name-text{
         font-size: 4rem;
     }
 
@@ -48,7 +53,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .header-text{
+    .header-name-text{
         font-size: 6rem;
     }
 
@@ -58,7 +63,7 @@
 @media only screen and (min-width: 992px) {
 
 
-    .header-text{
+    .header-name-text{
         font-size: 8.3rem;
     }
 
@@ -67,8 +72,10 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    .header-text{
-        font-size: 8.3rem;
+    .header-name-text{
+        font-size: 9rem;
+        font-weight: 100;
+        /* font-style: italic; */
     }
 
 

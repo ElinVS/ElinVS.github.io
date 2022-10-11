@@ -36,11 +36,6 @@ function App() {
         }>
         </Route>
 
-        <Route  path='/work' element={
-          <Work/>
-        }>
-        </Route>
-
         <Route  path='/project01' element={
           <Project01/>
         }>

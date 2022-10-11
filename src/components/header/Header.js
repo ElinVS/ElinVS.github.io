@@ -13,12 +13,17 @@ const Header = ({text}) => {
           initial='initial'
           animate='animate'
         >
+       
           <motion.p 
-            className='header-text'
+            className='header-name-text'
             variants={fadeInLeftChild}
           >
             {text}
           </motion.p>
+
+       
+
+
         </motion.div>    
     </>
   )

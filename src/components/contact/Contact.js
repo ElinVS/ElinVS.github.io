@@ -83,8 +83,14 @@ const Contact = () => {
         <div className='contact-wrapper'>
           <div className='contact-container'>
           
-          <p>elinvsvennberg @gmail.com</p>
-          <p>linkedin</p>
+          <motion.p
+              whileHover={{x:10}}
+              transition={{type:'tween'}}
+          >elinvsvennberg @gmail.com</motion.p>
+          <motion.p
+              whileHover={{x:10}}
+              transition={{type:'tween'}}
+          > <a href='https://www.linkedin.com/in/elin-svennberg-331605108/' target='_blank'>linkedin</a></motion.p>
     
         </div>
         

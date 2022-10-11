@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Link } from "react-router-dom"
 import {motion} from 'framer-motion'
 import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild } from '../../animations/Variants'
 import './style.css'
@@ -8,6 +9,17 @@ import NavbarProject from '../../components/projects/navbar/NavbarProject'
 
 
 const Project01 = ({}) => {
+
+  const [text, setText] = useState('next project')
+
+  const defaultState = () => {
+    setText('next project')
+  }
+
+  const displayText = () => {
+    setText('Mind Space')
+  }
+
 
   return (
     <>
@@ -84,7 +96,15 @@ const Project01 = ({}) => {
 
           <motion.span
             variants={fadeInLeftChild}
-          >next project</motion.span>
+            onMouseEnter={displayText}
+            onMouseLeave={defaultState}
+            
+          >
+            <Link className="next-project-links" to="/project02">
+               {text}
+            </Link>
+            
+          </motion.span>
 
           <motion.svg 
             initial='hidden'

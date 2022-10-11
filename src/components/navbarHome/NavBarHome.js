@@ -27,9 +27,9 @@ const NavBarHome = () => {
               variants={moveDown}
               >
                 <div className='links' id={toggleNav ? "hidden" : ""}>
-                <Link to="/" 
+                {/* <Link to="/" 
                 
-                > home </Link>
+                > home </Link> */}
                 <a href="#contact" 
                     
                    

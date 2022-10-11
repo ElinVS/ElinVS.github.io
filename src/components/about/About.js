@@ -10,30 +10,30 @@ import jonkoping from '../../assets/about/forrest.jpeg'
 const About = () => {
 
   
-  const images= [edinburgh, reykjavik, jonkoping]
+  // const images= [edinburgh, reykjavik, jonkoping]
 
-  const [image, setImage] = useState('img');
-  const [text, setText] = useState(AboutData.img.portrait)
+  // const [image, setImage] = useState('img');
+  // const [text, setText] = useState(AboutData.img.portrait)
 
-  const defaultState = () => {
-    setImage('img')
-    setText(AboutData.img.portrait)
-  }
+  // const defaultState = () => {
+  //   setImage('img')
+  //   setText(AboutData.img.portrait)
+  // }
 
-  const selectedEdinburgh = () =>{ 
-      setImage(images[0]) 
-      setText(AboutData.img.edinburgh)  
-  }
+  // const selectedEdinburgh = () =>{ 
+  //     setImage(images[0]) 
+  //     setText(AboutData.img.edinburgh)  
+  // }
 
-  const selectedReykjavik = () =>{ 
-      setImage(images[1]) 
-      setText(AboutData.img.reykjavik)  
-  }
+  // const selectedReykjavik = () =>{ 
+  //     setImage(images[1]) 
+  //     setText(AboutData.img.reykjavik)  
+  // }
 
-  const selectedJonkoping = () =>{ 
-      setImage(images[2]) 
-      setText(AboutData.img.jonkoping)  
-  }
+  // const selectedJonkoping = () =>{ 
+  //     setImage(images[2]) 
+  //     setText(AboutData.img.jonkoping)  
+  // }
 
  
   return (
@@ -90,14 +90,14 @@ const About = () => {
         className='img'
         variants={fadeUpChild}
       >
-        <img src={image} width={300} height={300}/>
+        {/* <img src={image} width={300} height={300}/> */}
       </motion.div>
 
     
 
       <motion.p
       variants={fadeUpChild}
-      > {text}</motion.p>
+      > tokyo 2019</motion.p>
     </motion.div>
     
 
@@ -111,11 +111,11 @@ const About = () => {
       <motion.p
         variants={fadeUpChild}> 
         I am a software developer based in
-         <span onMouseEnter={selectedEdinburgh}  onMouseLeave={defaultState}> Edinburgh  </span>
+         <span> Edinburgh  </span>
          , by way of 
-         <span onMouseEnter={selectedReykjavik } onMouseLeave={defaultState}> Reykjavik </span>  
+         <span > Reykjavik </span>  
           and originally from 
-         <span onMouseEnter={selectedJonkoping } onMouseLeave={defaultState}> Jonkoping </span> 
+         <span > Jonkoping </span> 
       </motion.p>
 
       <motion.p
