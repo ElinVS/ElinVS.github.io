@@ -18,7 +18,7 @@
     letter-spacing: - 0.1em;    
     font-weight: 600;
     margin:  0;
-    width: calc(100% - 150px);
+    /* width: calc(100% - 150px); */
     height: auto;
     text-transform: uppercase;
     font-style: italic;
@@ -124,7 +124,7 @@
 @media only screen and (min-width: 1200px) {
 
     .job-title-text{
-        font-size: 6rem;
+        font-size: 6.6rem;
     }
 
     .arrow-container{
