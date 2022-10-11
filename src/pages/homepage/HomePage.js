@@ -15,12 +15,13 @@ export const ThemeContext = createContext(null)
 const HomePage = ({text, titletext}) => {
 
   const [theme, setTheme] = useState('light')
+  const [navTheme, setNavTheme] = useState ('light-nav')
   const [word, setWord] = useState('dark')
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark': 'light'))
     setWord((curr) => (curr === 'dark' ? 'light': 'dark'))
-    
+    setNavTheme((curr) => (curr === 'light-nav' ? 'dark-nav': 'light-nav'))
   }
 
   
@@ -29,7 +30,7 @@ const HomePage = ({text, titletext}) => {
     <>
       <ThemeContext.Provider value={{theme, toggleTheme}}>
         <section className='home-page' id={theme}>
-          <NavBarHome />
+          <NavBarHome navTheme={navTheme} />
         
           {/* <Navbar/> */}
           <Header text="elin svennberg " theme={theme} />

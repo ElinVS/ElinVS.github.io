@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import '../navbarHome/style.css'
 
-const NavBarHome = ({theme}) => {
+const NavBarHome = ({navTheme}) => {
 
     const [toggleNav, setToggleNav] = useState(false)
 
@@ -26,35 +26,25 @@ const NavBarHome = ({theme}) => {
               animate= 'animate'
               variants={moveDown}
               >
-                <div  className='links' id={toggleNav ? "hidden"  : ""}>
-                {/* <Link to="/" 
+                <div  className='links' id={ toggleNav ? "hidden"  : ""} >
                 
-                > home </Link> */}
-                
-                <a id={theme} href="#contact" 
-                    
-                   
+                  <a id={navTheme} href="#contact" 
                     >contact</a> 
-                  <a id={theme} href="#work" 
-                    
-                    
-                > work </a>
-                <a id={theme} href="#skills" 
-                  
+                  <a id={navTheme}  href="#work" 
+                  > work </a>
+                  <a id={navTheme}  href="#skills" 
                     
                 > skills </a>
                 </div>
-                <button  onClick={() => setToggleNav (!toggleNav)}>
+                <button id={navTheme}  onClick={() => setToggleNav (!toggleNav)} >
                     <MenuOutlinedIcon
-                    
-                    
                     />
                 </button>
             </motion.div>
            
            
 
-            <div className='right-side'>
+            <div className='right-side' id={navTheme} >
                 <span>   
             {date.toLocaleDateString('en-GB', {
                         day: 'numeric',

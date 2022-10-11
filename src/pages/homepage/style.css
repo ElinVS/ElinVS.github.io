@@ -42,6 +42,22 @@
 
 }
 
+#light-nav {
+    color:#121212;
+}
+#dark-nav {
+    color:#ffff;
+}
+
+#light-nav .home-page{
+    color:#121212;
+}
+#dark-nav .home-page {
+    color:#ffff;
+}
+
+
+
 #light .home-page{
     background-color: rgb(249, 244, 236);
 }
