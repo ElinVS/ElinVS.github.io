@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { draw, fadeInRight, fadeInRightChild, moveUp } from '../../animations/Variants'
 import '../jobtitle/style.css'
 
-const Title = ({titletext}) => {
+const Title = ({titletext, theme}) => {
 
 
   return (
@@ -16,6 +16,7 @@ const Title = ({titletext}) => {
       >
         <motion.p 
           className='job-title-text'
+          id={theme}
           variants={fadeInRightChild}
         >
           {titletext}
@@ -32,10 +33,11 @@ const Title = ({titletext}) => {
 
     <motion.div
       className='statement-div'
+      
     
     >
 
-  <p>I have a fondness for human centered design, websites crafted into memorable creations and dogs with little legs</p>
+  <p id={theme}>I have a fondness for human centered design, websites crafted into memorable creations and dogs with little legs</p>
 
 
 
@@ -61,7 +63,7 @@ const Title = ({titletext}) => {
 
 
 
-        {/* <motion.svg 
+        <motion.svg 
           
           whileHover={{y:40}}
           transition={{type:'tween'}}
@@ -78,7 +80,7 @@ const Title = ({titletext}) => {
               strokeLinecap="round" 
               strokeLinejoin="round" 
               d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </motion.svg> */}
+        </motion.svg>
       </motion.div>
       
    

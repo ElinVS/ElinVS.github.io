@@ -7,7 +7,7 @@ import { fadeUp,fadeUpChild } from '../../animations/Variants'
 
 
 
-const Work = () => {
+const Work = ({theme}) => {
 
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -45,13 +45,14 @@ const Work = () => {
         y1="10"
         x2="300"
         y2="10"
-        stroke="#121212"
+        stroke="currentColor"
         variants={draw}
         // custom={0.5}
       />
       </motion.svg>
 
         <motion.p 
+         id={theme}
         >01 / selected work</motion.p>  
       </motion.div>
 
@@ -61,12 +62,13 @@ const Work = () => {
         <Link to='/project01' className="work-link">
           <motion.div 
           className='work-selection'
+           id={theme}
           whileHover={{x:10}}
           transition={{type:'tween'}}
           >
-            <p>matthew collings</p> 
-            <span className="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
-            <p> 01 </p>  
+            <p  id={theme}>matthew collings</p> 
+            <span className="feature-text"  id={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <p  id={theme}> 01 </p>  
           </motion.div> 
         </Link>
       </div>  
@@ -78,9 +80,9 @@ const Work = () => {
           whileHover={{x:10}}
           transition={{type:'tween'}}
           >
-            <p>mind space</p> 
-            <span className="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
-            <p> 02 </p>  
+            <p  id={theme}>mind space</p> 
+            <span className="feature-text"  id={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <p  id={theme}> 02 </p>  
           </motion.div>
         </Link>
       </div> 
@@ -92,9 +94,9 @@ const Work = () => {
           whileHover={{x:10}}
           transition={{type:'tween'}}
           >
-            <p>erik</p> 
-            <span className="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
-            <p> 03 </p>  
+            <p  id={theme}>erik</p> 
+            <span className="feature-text"  id={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <p id={theme}> 03 </p>  
           </motion.div>
         </Link>
       </div>                            

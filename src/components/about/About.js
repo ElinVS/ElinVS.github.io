@@ -7,7 +7,7 @@ import edinburgh  from '../../assets/about/edinburgh1.jpeg'
 import reykjavik from '../../assets/about/volcano.jpeg'
 import jonkoping from '../../assets/about/forrest.jpeg'
 
-const About = () => {
+const About = ({theme}) => {
 
   
   // const images= [edinburgh, reykjavik, jonkoping]
@@ -76,14 +76,16 @@ const About = () => {
         y1="10"
         x2="300"
         y2="10"
-        stroke="#121212"
+        stroke="currentColor" 
         variants={draw}
         // custom={0.5}
       />
       </motion.svg>
 
       <motion.p
-      variants={fadeUpChild}
+       id={theme}
+        variants={fadeUpChild}
+     
       > 02 / ABOUT </motion.p>
         
       <motion.div 
@@ -97,18 +99,23 @@ const About = () => {
 
       <motion.p
       variants={fadeUpChild}
+      id={theme}
+     
       > tokyo 2019</motion.p>
     </motion.div>
     
 
     <motion.div 
       className='about-container'
+      
+
       variants={fadeUp}
       initial='initial'
       whileInView='animate'
     >  
             
       <motion.p
+        id={theme}
         variants={fadeUpChild}> 
         I am a software developer based in
          <span> Edinburgh  </span>
@@ -119,16 +126,19 @@ const About = () => {
       </motion.p>
 
       <motion.p
+       id={theme}
         variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>
 
       <motion.p
+        id={theme}
         variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>
 
       <motion.p
+        id={theme}
         variants={fadeUpChild}>
         {AboutData.interest}
       </motion.p>

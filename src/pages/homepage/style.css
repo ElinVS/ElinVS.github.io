@@ -1,4 +1,4 @@
-.home-page{
+ .home-page{
 
     /* background-color: rgb(218, 215, 213); */
     background-color: rgb(249, 244, 236);
@@ -27,6 +27,27 @@
     height: 100%;
     width: 100%;
     min-width: 100%;
+}
+
+
+
+#light {
+    background-color: rgb(249, 244, 236);
+    color: #121212;
+
+}
+#dark {
+    background-color: #121212;
+    color: #ffff;
+
+}
+
+#light .home-page{
+    background-color: rgb(249, 244, 236);
+}
+
+#light .home-page{
+    background-color: rgb(249, 244, 236);
 }
 
  

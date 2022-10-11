@@ -1,20 +1,20 @@
 import React from 'react'
 import '../footer/style.css'
 
-const Footer = () => {
+const Footer = ({theme, toggleTheme, word}) => {
   return (
     <>
 
-        <footer className='footer'>
+        <footer className='footer' id={theme}>
             <div className='footer-container'>
 
-                <div className='footer-left'>
-                    <p> dark </p>
-                    <p> light </p>
+                <div className='footer-left' >
+                    <p id={theme} onClick={toggleTheme}> {word} </p>
+
                 </div>
 
-                <div className='footer-right'>
-                    <p>code&design by Elin Svennberg</p>
+                <div className='footer-right' >
+                    <p id={theme} >code & design by Elin Svennberg</p>
                 </div>
 
             </div>

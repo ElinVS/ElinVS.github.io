@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { fadeInLeft , fadeInLeftChild } from '../../animations/Variants'
 import '../header/style.css'
 
-const Header = ({text}) => {
+const Header = ({text, theme}) => {
 
   return (
     <>
@@ -16,6 +16,7 @@ const Header = ({text}) => {
        
           <motion.p 
             className='header-name-text'
+            id={theme}
             variants={fadeInLeftChild}
           >
             {text}

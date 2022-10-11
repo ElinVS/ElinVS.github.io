@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import '../contact/style.css'
 import {draw} from '../../animations/Variants'
 
-const Contact = () => {
+const Contact = ({theme}) => {
   return (
     <>
 
@@ -11,27 +11,28 @@ const Contact = () => {
         <div className='arrow-wrapper'>
 
         <motion.svg
-      
-      height="10"
-      
-      initial="hidden"
-      whileInView="visible"
+  
+          height="10"
+          
+          initial="hidden"
+          whileInView="visible"
     >
        <motion.line
         x1="1"
         y1="10"
         x2="300"
         y2="10"
-        stroke="#121212"
+        stroke="currentColor" 
         variants={draw}
         // custom={0.5}
       />
       </motion.svg>
 
-        <p>04 / say hello</p>
+        <p id={theme}>04 / say hello</p>
         
         <motion.div 
           className='contact-arrow'
+          
         >
 
 
@@ -60,6 +61,7 @@ const Contact = () => {
 
     
           <motion.svg 
+          
           whileHover={{y:40, x:-40}}
           transition={{type:'spring'}}
           initial="hidden"
@@ -84,13 +86,14 @@ const Contact = () => {
           <div className='contact-container'>
           
           <motion.p
+          id={theme}
               whileHover={{x:10}}
               transition={{type:'tween'}}
           >elinvsvennberg @gmail.com</motion.p>
           <motion.p
               whileHover={{x:10}}
               transition={{type:'tween'}}
-          > <a href='https://www.linkedin.com/in/elin-svennberg-331605108/' target='_blank'>linkedin</a></motion.p>
+          > <a id={theme} href='https://www.linkedin.com/in/elin-svennberg-331605108/' target='_blank'>linkedin</a></motion.p>
     
         </div>
         

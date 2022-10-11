@@ -6,7 +6,7 @@ import { SkillsData } from './SkillsData'
 
 import '../skills/style.css'
 
-const Skills = () => {
+const Skills = ({theme}) => {
 
 
 
@@ -43,12 +43,13 @@ const draw = {
               y1="10"
               x2="300"
               y2="10"
-              stroke="#121212"
+              stroke="currentColor"
               variants={draw}
             />
           </motion.svg>
 
           <motion.p 
+            id={theme}
             variants={fadeUpChild}
           >
             03 / Skills 
@@ -81,6 +82,7 @@ const draw = {
 
           <div 
             className='skills-container'
+            
             initial='initial'
             variants={fadeUp}
             whileInView='animate'
@@ -89,15 +91,31 @@ const draw = {
           
 
 
-            <h3>Technical: </h3>
+            <h3  id={theme}>Technical: </h3>
 
 
             
               <ul
+
               variants={fadeUpChild}
               > 
                 {SkillsData.Technical.map((skill, index) => {
                   return <li 
+                          id={theme}
+                          key={index}
+                          >{skill}</li>;
+                })}
+              </ul>
+          </div>
+
+          <div className='skills-container' >
+            <h3  id={theme}>Technical: </h3>
+
+
+              <ul> 
+                {SkillsData.Technical.map((skill, index) => {
+                  return <li 
+                          id={theme}
                           key={index}
                           >{skill}</li>;
                 })}
@@ -105,21 +123,13 @@ const draw = {
           </div>
 
           <div className='skills-container'>
-            <h3>Technical: </h3>
-
-
+            <h3  id={theme}>Technical: </h3>
               <ul> 
                 {SkillsData.Technical.map((skill, index) => {
-                  return <li key={index}>{skill}</li>;
-                })}
-              </ul>
-          </div>
-
-          <div className='skills-container'>
-            <h3>Technical: </h3>
-              <ul> 
-                {SkillsData.Technical.map((skill, index) => {
-                  return <li key={index}>{skill}</li>;
+                  return <li  
+                          id={theme}
+                          key={index}
+                          >{skill}</li>;
                 })}
               </ul>
           </div>
