@@ -18,6 +18,7 @@ const Contact = ({theme}) => {
           whileInView="visible"
     >
        <motion.line
+        id={theme}
         x1="1"
         y1="10"
         x2="300"

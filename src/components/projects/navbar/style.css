@@ -4,14 +4,20 @@
     width:100%;
     position:fixed;
     z-index:50;
-    padding: 2em 3em 2em 3em; 
+    /* padding: 2em 3em 2em 3em;  */
+  
+}
+
+.navbar-wrapper{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+
 }
 
 .project-links{
     color: #121212;
-    font-size: 3em;
+    font-size: 1em;
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em; 
@@ -51,7 +57,7 @@
 @media only screen and (min-width: 768px) {
 
     .project-links{
-        font-size: 3em;
+        font-size: 1em;
         
     }
   
