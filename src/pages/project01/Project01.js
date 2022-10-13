@@ -8,7 +8,7 @@ import NavbarProject from '../../components/projects/navbar/NavbarProject'
 import Footer from '../../components/footer/Footer'
 
 
-const Project01 = ({theme, navTheme}) => {
+const Project01 = ({theme, navTheme, toggleTheme, word}) => {
 
   const [text, setText] = useState('next project')
 
@@ -24,7 +24,7 @@ const Project01 = ({theme, navTheme}) => {
   return (
     <>
 
-      <NavbarProject navTheme={navTheme}/>
+      <NavbarProject navTheme={navTheme} toggleTheme={toggleTheme} word={word}/>
       <section className='project01-page'
       id={theme}
       >
@@ -48,11 +48,13 @@ const Project01 = ({theme, navTheme}) => {
         <div className='parent'>
 
         <div className='description-details'>
-          <p id={theme} >2022 github </p>
+        <p id={theme} >website here</p>
+        <p >  <a id={theme} href='https://github.com/ElinVS/mc_website' target='_blank'>2022 / github</a> </p>
+        
         </div>
 
         <section className='description-section'>
-          <p id={theme}>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
+          <p id={theme}>{ProjectData.description01} </p>
         </section>
 
         </div>
@@ -159,7 +161,7 @@ const Project01 = ({theme, navTheme}) => {
 
       </section>
 
-      <Footer/>
+      <Footer theme={theme}/>
       
       
     </>

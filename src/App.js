@@ -46,17 +46,17 @@ function App() {
         </Route>
 
         <Route  path='/project01' element={
-          <Project01 theme={theme} navTheme={navTheme}/>
+          <Project01 theme={theme} navTheme={navTheme} toggleTheme={toggleTheme} word={word}/>
         }>
         </Route>
 
         <Route  path='/project02' element={
-          <Project02 theme={theme} navTheme={navTheme}/>
+          <Project02 theme={theme} navTheme={navTheme} toggleTheme={toggleTheme} word={word}/>
         }>
         </Route>
 
         <Route  path='/project03' element={
-          <Project03 theme={theme} navTheme={navTheme}/>
+          <Project03 theme={theme} navTheme={navTheme} toggleTheme={toggleTheme} word={word}/>
         }>
         </Route>
 
