@@ -22,10 +22,7 @@
     font-family: "inter";
    
   }
-  .counter {
-    position: absolute;
-   
-  }
+ 
 
   .loader-bar {
     position: absolute;
@@ -34,12 +31,15 @@
     background-color:#121212;
     top: 55%;
   }
+
+  /*  */
  
   @media screen and (max-width: 400px) {
-    .loader-bar {
-      top: 56%;
+
+    .loader-wrap{
+        align-items: flex-start;
     }
-    .counter {
-      top: 57%;
-    }
+   
+
+    
   }
