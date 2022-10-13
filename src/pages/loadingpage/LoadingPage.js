@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import '../loadingpage/style.css'
 import {motion} from 'framer-motion'
-import { fadeInLeft , fadeInLeftChild} from '../../animations/Variants';
+import { moveUp, draw} from '../../animations/Variants';
 
 const LoaderVariant = {
   initial: { left: "-100vw" },
@@ -21,7 +21,13 @@ const LoadingPage = () => {
     return (
       <>
         <div className="loader-container">
-          <motion.div className="loader-wrap">
+          <motion.div 
+            className="loader-wrap"
+            variants={draw}
+            initial='initial'
+            animate='animate'
+            
+            >
 
             <p>hej</p>
 
