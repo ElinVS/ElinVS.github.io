@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import {motion} from 'framer-motion'
 import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild } from '../../animations/Variants'
 import './style.css'
-import image1 from '../../assets/about/forrest.jpeg'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 import Footer from '../../components/footer/Footer'
@@ -35,27 +34,38 @@ const Project01 = ({theme, navTheme}) => {
           initial='initial'
           animate='animate'
           variants={fadeInLeft}
-          
           >
 
           <motion.p
             variants={fadeUpChild}
             id={theme}
-          
           > project01 / Matthew Collings</motion.p>
+
         </motion.header>
 
-        <section className='description-section'>
-          <p  id={theme}>Lorem ipsum dolor sit amet. Ut fuga omnis ex facilis facilis hic beatae obcaecati est aperiam quaerat rem internos consequatur sed blanditiis laboriosam nam enim molestiae. Sit obcaecati facere est impedit doloribus est culpa cupiditate non vero nemo? Est molestiae eveniet et nemo officia est mollitia illo? </p><p>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
-        </section>
     
 
+        <div className='parent'>
+
+        <div className='description-details'>
+          <p id={theme} >2022 github </p>
+        </div>
+
+        <section className='description-section'>
+          <p id={theme}>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
+        </section>
+
+        </div>
+
+        
         <motion.div 
         className='img-grid-wrapper'
         >
+          
           <motion.div 
             className='div1'
           >
+       
           </motion.div>
           <motion.div 
           className='div2'
@@ -64,13 +74,28 @@ const Project01 = ({theme, navTheme}) => {
           <motion.div 
           className='div3'
           >
+            
           </motion.div>
           <motion.div 
           className='div4'
           ></motion.div>
           <div className='div5'></div>
           <div className='div6'></div>
-          <span  id={theme}>@github</span>
+         
+        </motion.div>
+
+
+        <div className='parent'>
+
+        <motion.div 
+          className='tech-stack'
+          initial='initial'
+          whileInView='animate'>
+          <motion.span 
+          id={theme} 
+          variants={fadeUpChild}
+          > tech stack </motion.span>
+          
         </motion.div>
 
         <motion.section 
@@ -89,6 +114,9 @@ const Project01 = ({theme, navTheme}) => {
           })} 
 
         </motion.section>
+
+        </div>
+
 
         <motion.section 
           className='next-project'

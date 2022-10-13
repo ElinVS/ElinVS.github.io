@@ -1,21 +1,18 @@
 .project01-page{
     min-height: 100vh;
     padding: 2em 3em 3em 3em;
-    background-color: rgb(249, 244, 236);
+    
 
  
 }
 .project02-page{
     min-height: 100vh;
     padding: 0em 3em 3em 3em;
-    /* background-color: rgb(145, 143, 129); */
-    background-color: rgb(249, 244, 236);
+   
 }
 .project03-page{
     min-height: 100vh;
     padding: 0em 3em 3em 3em;
-    /* background-color: #d4c5a3;  */
-    background-color: rgb(249, 244, 236);
 }
 
 /*  */
@@ -34,13 +31,34 @@
     text-transform: uppercase; 
 }
 
-.description-section{
-    width:100%;
-    min-height: 20vh;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    }
     
-}
+    .description-details { 
+        grid-area: 1 / 1 / 2 / 2; 
+    display:flex;
+    flex-direction: column;
+    border-top: 1px solid #121212;
+    
+    
+    }
 
-.description-section >p , .tech-description > span, .img-grid-wrapper > span{
+    .description-section { 
+        grid-area: 1 / 2 / 2 / 4; 
+        display: flex;
+        text-align: justify;
+       
+        
+    }
+
+
+
+.description-section >p , .description-details > p, .tech-stack > span, .tech-description > span, .img-grid-wrapper > span{
     color: #121212;
     font-size: 1.2rem;
     font-weight: 100;
@@ -53,60 +71,63 @@
 .img-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
     grid-row-gap: 20px;
     
     
     }
         
-        .div1 { grid-area: 1 / 1 / 3 / 2; 
-            /* background-image: url('/src/assets/project01/Screenshot\ 2022-10-12\ at\ 14.25.51.png'); */
-            background-size: cover;
-            background-position: 100%;
-            height:300px;
-            
-        }
-        .div2 { grid-area: 1 / 2 / 4 / 3; 
-            /* background-image: url('/src/assets/project01/Screenshot\ 2022-10-12\ at\ 14.26.17.png'); */
-            background-size: cover;
-            background-position: 100%;
+    .div1 { grid-area: 1 / 2 / 2 / 4; 
+        background-image: url('/src/assets/project01/one.png');
+        background-size: cover;
+        background-position: 100%;
+        height:600px
+    
+    }
+    .div2 { grid-area: 2 / 2 / 3 / 4; 
+        background-image: url('/src/assets/project01/one.png');
+
+    }
+    .div3 { grid-area: 3 / 2 / 4 / 4; 
+        background-image: url('/src/assets/project01/one.png');
+       
+    }
+    .div4 { 
+        grid-area: 4 / 2 / 5 / 4; 
+        background-image: url('/src/assets/project01/one.png');
+
+    }
+    .div5 { 
+        grid-area: 5 / 2 / 6 / 4; 
+        background-image: url('/src/assets/project01/one.png');
+    }
+    .div6 { 
+        grid-area: 6 / 2 / 7 / 4; 
+        background-image: url('/src/assets/project01/one.png');
+
+    }
+
+        .tech-stack{
+            grid-area: 1 / 1 / 2 / 2; 
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
             
 
-
-        }
-        .div3 { 
-            grid-area: 1 / 3 / 3 / 4;
-            /* background-image: url('/src/assets/project01/Screenshot\ 2022-10-12\ at\ 14.26.29.png'); */
-            background-size: cover;
-            background-position: 100%;
-        }
-        .div4 { 
-            grid-area: 3 / 1 / 5 / 2;
-            /* background-image: url('/src/assets/project01/Screenshot\ 2022-10-12\ at\ 14.26.57.png'); */
-            background-size: cover;
-            background-position: 100%;
-         }
-        .div5 { 
-            grid-area: 3 / 3 / 5 / 4; 
-            /* background-image: url('/src/assets/project01/Screenshot\ 2022-10-12\ at\ 14.27.12.png'); */
-            background-size: cover;
-            background-position: 100%;
-        }
-        .div6 { 
-            grid-area: 4 / 2 / 6 / 3; 
-            /* background-image: url('/src/assets/project01/Screenshot\ 2022-10-12\ at\ 14.28.00.png'); */
-            background-size: cover;
-            background-position: 100%;
         }
 
         .tech-description{
+            grid-area: 1 / 2 / 2 / 4; 
             width:100%;
             min-height: 20vh;
             display:flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            
+            
         }
 
 
@@ -161,7 +182,8 @@ html{
         grid-row-gap: 20px;
         }
         
-        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div1 { grid-area: 1 / 1 / 2 / 2;
+        height:300px }
         .div2 { grid-area: 2 / 1 / 3 / 2; }
         .div3 { grid-area: 3 / 1 / 4 / 2; }
         .div4 { grid-area: 4 / 1 / 5 / 2; }
