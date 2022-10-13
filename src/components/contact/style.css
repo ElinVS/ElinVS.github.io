@@ -46,7 +46,12 @@
     height: auto;
     text-transform: uppercase;
     font-style: italic;
+    
 
+}
+
+.contact-container{
+    cursor: pointer;
 }
 
 .contact-arrow {

@@ -37,14 +37,14 @@
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
+    
     }
     
     .description-details { 
         grid-area: 1 / 1 / 2 / 2; 
-    display:flex;
-    flex-direction: column;
-    border-top: 1px solid #121212;
-    
+        display:flex;
+        flex-direction: column;
+        border-top: 1px solid #121212;
     
     }
 
@@ -52,7 +52,6 @@
         grid-area: 1 / 2 / 2 / 4; 
         display: flex;
         text-align: justify;
-       
         
     }
 
@@ -73,7 +72,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     
     
     }
@@ -252,16 +251,73 @@ html{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+
+    .img-grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2;
+        height:300px }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; }
+        .div4 { grid-area: 4 / 1 / 5 / 2; }
+        .div5 { grid-area: 5 / 1 / 6 / 2; }
+        .div6 { grid-area: 6 / 1 / 7 / 2; }
+
+        .parent{
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(2, 1fr);
+           
+    
+            
+        }
+
+        .tech-stack{
+            grid-area: 1 / 1 / 2 / 2; 
+            align-items: flex-end;
+            margin-bottom: 20px;
+            
+        }
+
+
+        .tech-description {
+            grid-area: 2 / 1 / 3 / 2; 
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+           
+        }
+
+        .description-details{
+            grid-area: 1 / 1 / 2 / 2; 
+            justify-content: flex-end;
+            
+
+        }
+
+        .description-section{
+            grid-area: 2 / 1 / 3 / 2; 
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+        .description-section > p{
+            font-size: 1rem;
+
+        }
+   
+
     .project-header, .next-project{
         font-size: 3rem;
     }
 
   
-        .tech-description {
-            width:100%;
-
-           
-        }
+       
         .tech-description > span {
             
             font-size: 1rem;
@@ -273,6 +329,105 @@ html{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        
+        }
+        
+        .description-details { 
+            grid-area: 1 / 1 / 2 / 2; 
+            display:flex;
+            flex-direction: column;
+            border-top: 1px solid #121212;
+        
+        }
+    
+        .description-section { 
+            grid-area: 1 / 2 / 2 / 4; 
+            display: flex;
+            text-align: justify;
+            
+        }
+
+
+        .img-grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 40px;
+            
+            
+            }
+                
+            .div1 { grid-area: 1 / 2 / 2 / 4; 
+                background-image: url('/src/assets/project01/one.png');
+                background-size: cover;
+                background-position: 100%;
+                height:600px
+            
+            }
+            .div2 { grid-area: 2 / 2 / 3 / 4; 
+                background-image: url('/src/assets/project01/one.png');
+                background-size: cover;
+                background-position: 100%;
+        
+            }
+            .div3 { grid-area: 3 / 2 / 4 / 4; 
+                background-image: url('/src/assets/project01/one.png');
+                background-size: cover;
+                background-position: 100%;
+               
+            }
+            .div4 { 
+                grid-area: 4 / 2 / 5 / 4; 
+                background-image: url('/src/assets/project01/one.png');
+                background-size: cover;
+                background-position: 100%;
+        
+            }
+            .div5 { 
+                grid-area: 5 / 2 / 6 / 4; 
+                background-image: url('/src/assets/project01/one.png');
+                background-size: cover;
+                background-position: 100%;
+            }
+            .div6 { 
+                grid-area: 6 / 2 / 7 / 4; 
+                background-image: url('/src/assets/project01/one.png');
+                background-size: cover;
+                background-position: 100%;
+        
+            }
+        
+                .tech-stack{
+                    grid-area: 1 / 1 / 2 / 2; 
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+        
+                }
+        
+                .tech-description{
+                    grid-area: 1 / 2 / 2 / 4; 
+                    width:100%;
+                    min-height: 20vh;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    
+                }
+    
+    
 
     .tech-description > span {
             

@@ -87,10 +87,11 @@ const Contact = ({theme}) => {
           <div className='contact-container'>
           
           <motion.p
-          id={theme}
+          
               whileHover={{x:10}}
               transition={{type:'tween'}}
-          >elinvsvennberg @gmail.com</motion.p>
+          > <a id={theme} href='mailto: elinvsvennberg@gmail.com'>elinvsvennberg @gmail.com</a>
+            </motion.p>
           <motion.p
               whileHover={{x:10}}
               transition={{type:'tween'}}

@@ -1,7 +1,7 @@
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css';
-import React, {useState, createContext}from 'react'
+import React, {useState, useEffect, createContext}from 'react'
 
 
 import HomePage from './pages/homepage/HomePage';
@@ -9,6 +9,7 @@ import HomePage from './pages/homepage/HomePage';
 import Project01 from './pages/project01/Project01';
 import Project02 from './pages/project02/Project02';
 import Project03 from './pages/project03/Project03';
+import LoadingPage from './pages/loadingpage/LoadingPage';
 
 
 export const ThemeContext = createContext(null)
@@ -29,19 +30,28 @@ function App() {
   }
 
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
+
   return (
     <>
     
-      {/* <Message/> */}
-
+    
       <ThemeContext.Provider value={{theme, toggleTheme}}>
 
       <Router> 
         
       <Routes>
+
       
         <Route exact path='/' element={
-          <HomePage navTheme={navTheme} theme={theme}  toggleTheme={toggleTheme} word={word} setWord={setWord} />
+          loading ? <LoadingPage/> : <HomePage navTheme={navTheme} theme={theme}  toggleTheme={toggleTheme} word={word} setWord={setWord} />
         }>
         </Route>
 

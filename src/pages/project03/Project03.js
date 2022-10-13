@@ -16,7 +16,7 @@ const Project03 = ({theme, navTheme, toggleTheme,word}) => {
 <section className='project03-page'  id={theme}>
 
       
-<motion.header 
+        <motion.header 
           className="project-header"
           initial='initial'
           animate='animate'
@@ -26,7 +26,7 @@ const Project03 = ({theme, navTheme, toggleTheme,word}) => {
           <motion.p
             variants={fadeUpChild}
             id={theme}
-          > project03 / Erik </motion.p>
+          > {ProjectData.Project03.title }</motion.p>
 
         </motion.header>
 
@@ -39,7 +39,7 @@ const Project03 = ({theme, navTheme, toggleTheme,word}) => {
         </div>
 
         <section className='description-section'>
-          <p id={theme}>{ProjectData.description03}</p>
+          <p id={theme}>{ProjectData.project03.description}</p>
         </section>
 
         </div>
@@ -91,7 +91,7 @@ const Project03 = ({theme, navTheme, toggleTheme,word}) => {
           whileInView='animate'
           >
           
-          {ProjectData.techstack03.map((tech, index)=> {
+          {ProjectData.project03.techstack.map((tech, index)=> {
             return <motion.span
                     id={theme}
                     variants={fadeUpChild}
