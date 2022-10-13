@@ -24,7 +24,7 @@ const Project03 = ({theme, navTheme}) => {
   <motion.p
    id={theme}
     variants={fadeUpChild}
-  > project02 / mind space</motion.p>
+  > project03 / erik</motion.p>
 </motion.header>
 
 <section className='description-section'>

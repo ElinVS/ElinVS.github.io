@@ -10,7 +10,7 @@ const NavbarProject = ({navTheme}) => {
     <>
         <nav className='navbar-project'>
           
-          <div className='navbar-wrapper'>
+         
                 <motion.div 
                 className='navbar-left'
                 
@@ -20,6 +20,7 @@ const NavbarProject = ({navTheme}) => {
                 >
                 <Link className="project-links" id={navTheme} to="/" > home </Link>
                 </motion.div>
+
                 <motion.div 
                 className='navbar-right'
                 
@@ -29,11 +30,11 @@ const NavbarProject = ({navTheme}) => {
                 >
                 {/* <span className="project-links" id={navTheme}>project :</span> */}
                 <Link className="project-links" id={navTheme} to="/project01" > 01 </Link>
-                <Link className="project-links" id={navTheme} to="/project01" > 02 </Link>
-                <Link className="project-links" id={navTheme} to="/project01" > 03 </Link>
+                <Link className="project-links" id={navTheme} to="/project02" > 02 </Link>
+                <Link className="project-links" id={navTheme} to="/project03" > 03 </Link>
                 </motion.div>
 
-          </div>   
+        
 
         </nav>
 

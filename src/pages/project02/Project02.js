@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import '../project01/style.css'
+import '../project02/style.css'
 import { Link } from "react-router-dom"
 import {motion} from 'framer-motion'
 import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild } from '../../animations/Variants'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
+import Carousel from '../../components/carousel/Carousel'
 
 
 const Project02 = ({theme, navTheme}) => {
@@ -46,29 +47,8 @@ const Project02 = ({theme, navTheme}) => {
     <p  id={theme}>Lorem ipsum dolor sit amet. Ut fuga omnis ex facilis facilis hic beatae obcaecati est aperiam quaerat rem internos consequatur sed blanditiis laboriosam nam enim molestiae. Sit obcaecati facere est impedit doloribus est culpa cupiditate non vero nemo? Est molestiae eveniet et nemo officia est mollitia illo? </p><p>In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis. </p>
   </section>
 
+    <Carousel/>
 
-  <motion.div 
-  className='img-grid-wrapper'
-  >
-    <motion.div 
-      className='div1'
-    >
-    </motion.div>
-    <motion.div 
-    className='div2'
-    > 
-    </motion.div>
-    <motion.div 
-    className='div3'
-    >
-    </motion.div>
-    <motion.div 
-    className='div4'
-    ></motion.div>
-    <div className='div5'></div>
-    <div className='div6'></div>
-    <span  id={theme}>@github</span>
-  </motion.div>
 
   <motion.section 
     className='tech-description'
