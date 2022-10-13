@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.7996cbd6.css",
-    "main.js": "/static/js/main.c283937d.js",
+    "main.css": "/static/css/main.92cb1c41.css",
+    "main.js": "/static/js/main.da4e64a1.js",
     "static/js/787.d4cc0e67.chunk.js": "/static/js/787.d4cc0e67.chunk.js",
     "static/media/forrest.jpeg": "/static/media/forrest.18c56360d9cac5e97779.jpeg",
     "static/media/volcano.jpeg": "/static/media/volcano.a1e1d8500d948f29935d.jpeg",
-    "static/media/jonkoping-beach.jpeg": "/static/media/jonkoping-beach.7ea005f647a95d674cfa.jpeg",
+    "static/media/one.png": "/static/media/one.7272d385e856bea14a44.png",
     "static/media/elin_bench_tokyo.JPG": "/static/media/elin_bench_tokyo.0c2d937fb60a0a661e93.JPG",
     "static/media/edinburgh1.jpeg": "/static/media/edinburgh1.cfeb837fb5587ad74778.jpeg",
     "index.html": "/index.html",
-    "main.7996cbd6.css.map": "/static/css/main.7996cbd6.css.map",
-    "main.c283937d.js.map": "/static/js/main.c283937d.js.map",
+    "main.92cb1c41.css.map": "/static/css/main.92cb1c41.css.map",
+    "main.da4e64a1.js.map": "/static/js/main.da4e64a1.js.map",
     "787.d4cc0e67.chunk.js.map": "/static/js/787.d4cc0e67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7996cbd6.css",
-    "static/js/main.c283937d.js"
+    "static/css/main.92cb1c41.css",
+    "static/js/main.da4e64a1.js"
   ]
 }
