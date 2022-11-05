@@ -6,6 +6,7 @@ import './style.css'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 import Footer from '../../components/footer/Footer'
+import testgif from '../../assets/testgif.gif'
 
 
 const Project01 = ({theme, navTheme, toggleTheme, word}) => {
@@ -66,7 +67,9 @@ const Project01 = ({theme, navTheme, toggleTheme, word}) => {
           
           <motion.div 
             className='div1'
+
           >
+            <img src={testgif} alt="my-gif" height={600}/>
        
           </motion.div>
           <motion.div 
