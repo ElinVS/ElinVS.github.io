@@ -29,7 +29,7 @@ const Contact = ({theme}) => {
       />
       </motion.svg>
 
-        <p id={theme}>04 / say hello</p>
+        <p id={theme}>04 / contact</p>
         
         <motion.div 
           className='contact-arrow'

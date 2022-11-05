@@ -32,6 +32,7 @@ line {
     font-family: 'Heebo', sans-serif;
     list-style: none; 
     text-align: justify;
+    text-transform: lowercase;
 
 }
 

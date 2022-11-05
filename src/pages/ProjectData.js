@@ -24,7 +24,7 @@ export const ProjectData = {
             'css',
         ],
     },
-    project01: {
+    project03: {
         title: 'project03 / erik',
         description:  'In repudiandae iste et deleniti facilis  deserunt galisum aut suscipit nesciunt. Eum atque laboriosam non enim deleniti ut fuga sint ea consectetur soluta qui libero veritatis' ,
         techstack:[

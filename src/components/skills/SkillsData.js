@@ -9,14 +9,28 @@ export const SkillsData = {
     "framer-motion"
 ],
 
+Interpersonal: [
+    "Customer Service",
+    "Agile",
+    "Collaboration",
+    "Leadership",
+    "Co-ordination",
+    "Training",
+    "Design"
+
+],
+
+
+
     Extra: [
-        'Swedish (Native)',
-        'English (Fluent)',
-        'Icelandic (Good)',
-        'Norwegian (Good)',
-        'Danish (Good)', 
-        'French',
+        'Swedish',
+        'English',
+        'Icelandic',
         'Figma',
+        'git & github',
+        'vscode',
+        'trello'
+
         
     ]
 }

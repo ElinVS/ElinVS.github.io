@@ -140,3 +140,16 @@ export const moveUp =  {
     }
   }    
 }
+
+
+
+//loader page animation
+
+export const loader = {
+  initial: { left: "-100vw" },
+  animate: {
+    left: "0",
+    transition: { duration: 2.5, type: "tween", ease: "linear" },
+  },
+}
+

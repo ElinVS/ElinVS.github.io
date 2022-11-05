@@ -101,11 +101,11 @@ const draw = {
           </div>
 
           <div className='skills-container' >
-            <h3  id={theme}>Technical: </h3>
+            <h3  id={theme}>Interpersonal: </h3>
 
 
               
-                {SkillsData.Technical.map((skill, index) => {
+                {SkillsData.Interpersonal.map((skill, index) => {
                   return <span
                           id={theme}
                           key={index}

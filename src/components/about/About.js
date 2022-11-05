@@ -114,12 +114,7 @@ const About = ({theme}) => {
       <motion.p
         id={theme}
         variants={fadeUpChild}> 
-        I am a software developer based in
-         <span> Edinburgh  </span>
-         , by way of 
-         <span > Reykjavik </span>  
-          and originally from 
-         <span > Jonkoping </span> 
+       {AboutData.intro}
       </motion.p>
 
       <motion.p
@@ -131,13 +126,13 @@ const About = ({theme}) => {
       <motion.p
         id={theme}
         variants={fadeUpChild}>
-        {AboutData.interest}
+        {AboutData.mission}
       </motion.p>
 
       <motion.p
         id={theme}
         variants={fadeUpChild}>
-        {AboutData.interest}
+        {AboutData.outro}
       </motion.p>
 
     </motion.div>
