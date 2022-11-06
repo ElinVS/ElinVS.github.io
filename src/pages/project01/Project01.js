@@ -6,7 +6,15 @@ import './style.css'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 import Footer from '../../components/footer/Footer'
-import testgif from '../../assets/testgif.gif'
+import mcgif from '../../assets/project01/MC_02.gif'
+import p1images from '../../assets/project01/p1images'
+import bio from '../../assets/project01/bio.png'
+import contact from '../../assets/project01/contact.png'
+import intro from '../../assets/project01/intro.png'
+import releases from '../../assets/project01/releases.png'
+import socials from '../../assets/project01/socials.png'
+import requiem from '../../assets/project01/requiem.png'
+import thirdmind2 from '../../assets/project01/thirdmind2.png'
 
 
 const Project01 = ({theme, navTheme, toggleTheme, word}) => {
@@ -60,68 +68,76 @@ const Project01 = ({theme, navTheme, toggleTheme, word}) => {
 
         </div>
 
+        <div className='parent'>
+
+<motion.div 
+  className='tech-stack'
+  initial='initial'
+  whileInView='animate'>
+  <motion.span 
+  id={theme} 
+  > tech stack </motion.span>
+  
+</motion.div>
+
+<motion.section 
+  className='tech-description'
+  >
+  
+  {ProjectData.project01.techstack.map((tech, index)=> {
+    return <motion.span
+            id={theme}
+            key={index}
+        > {tech}</motion.span>
+
+  })} 
+
+</motion.section>
+
+</div>
+
         
         <motion.div 
         className='img-grid-wrapper'
         >
+
           
           <motion.div 
-            className='div1'
+            className='image-div'
+          >
+            <img src={mcgif} alt="gif of website"  />
+          </motion.div>
 
-          >
-            <img src={testgif} alt="my-gif" height={600}/>
-       
+          <motion.div 
+          className='image-div'
+          > <img src={bio} alt="gif of website" />
           </motion.div>
           <motion.div 
-          className='div2'
-          > 
-          </motion.div>
-          <motion.div 
-          className='div3'
-          >
+          className='image-div'
+          ><img src={intro} alt="gif of website" />
             
           </motion.div>
           <motion.div 
-          className='div4'
-          ></motion.div>
-          <div className='div5'></div>
-          <div className='div6'></div>
+          className='image-div'
+          ><img src={socials} alt="gif of website" /></motion.div>
+          
+          <motion.div 
+          className='image-div'
+          ><img src={requiem} alt="gif of website" /></motion.div>
+          
+          <motion.div 
+          className='image-div'
+          ><img src={releases} alt="gif of website" /></motion.div>
+          
+          <motion.div 
+          className='image-div'
+          ><img src={contact} alt="gif of website" /></motion.div>
+          
          
         </motion.div>
 
 
-        <div className='parent'>
-
-        <motion.div 
-          className='tech-stack'
-          initial='initial'
-          whileInView='animate'>
-          <motion.span 
-          id={theme} 
-          variants={fadeUpChild}
-          > tech stack </motion.span>
-          
-        </motion.div>
-
-        <motion.section 
-          className='tech-description'
-          initial='initial'
-          whileInView='animate'
-          >
-          
-          {ProjectData.project01.techstack.map((tech, index)=> {
-            return <motion.span
-                    id={theme}
-                    variants={fadeUpChild}
-                    key={index}
-                > {tech}</motion.span>
-
-          })} 
-
-        </motion.section>
-
-        </div>
-
+  
 
         <motion.section 
           className='next-project'

@@ -50,77 +50,87 @@ const Project02 = ({theme, navTheme, toggleTheme, word}) => {
         <div className='parent'>
 
         <div className='description-details'>
-          <p id={theme} > website here </p>
-          <p id={theme} > <a id={theme} href='https://github.com/ElinVS/ElinVS.github.io' target='_blank'>2022 github </a>  </p>
-         
+        <p id={theme} >website here</p>
+        <p >  <a id={theme} href='https://github.com/ElinVS/mc_website' target='_blank'>2022 / github</a> </p>
+        
         </div>
 
         <section className='description-section'>
-          <p id={theme}> {ProjectData.project02.description} </p>
+          <p id={theme}>{ProjectData.project02.description} </p>
         </section>
 
         </div>
+
+        <div className='parent'>
+
+<motion.div 
+  className='tech-stack'
+  initial='initial'
+  whileInView='animate'>
+  <motion.span 
+  id={theme} 
+  > tech stack </motion.span>
+  
+</motion.div>
+
+<motion.section 
+  className='tech-description'
+  >
+  
+  {ProjectData.project02.techstack.map((tech, index)=> {
+    return <motion.span
+            id={theme}
+            key={index}
+        > {tech}</motion.span>
+
+  })} 
+
+</motion.section>
+
+</div>
 
         
         <motion.div 
         className='img-grid-wrapper'
         >
+
           
           <motion.div 
-            className='div1'
+            className='image-div'
           >
-       
+            <img src={mcgif} alt="gif of website"  />
+          </motion.div>
+
+          <motion.div 
+          className='image-div'
+          > <img src={bio} alt="gif of website" />
           </motion.div>
           <motion.div 
-          className='div2'
-          > 
-          </motion.div>
-          <motion.div 
-          className='div3'
-          >
+          className='image-div'
+          ><img src={intro} alt="gif of website" />
             
           </motion.div>
           <motion.div 
-          className='div4'
-          ></motion.div>
-          <div className='div5'></div>
-          <div className='div6'></div>
+          className='image-div'
+          ><img src={socials} alt="gif of website" /></motion.div>
+          
+          <motion.div 
+          className='image-div'
+          ><img src={requiem} alt="gif of website" /></motion.div>
+          
+          <motion.div 
+          className='image-div'
+          ><img src={releases} alt="gif of website" /></motion.div>
+          
+          <motion.div 
+          className='image-div'
+          ><img src={contact} alt="gif of website" /></motion.div>
+          
          
         </motion.div>
 
 
-        <div className='parent'>
-
-        <motion.div 
-          className='tech-stack'
-          initial='initial'
-          whileInView='animate'>
-          <motion.span 
-          id={theme} 
-          variants={fadeUpChild}
-          > tech stack </motion.span>
-          
-        </motion.div>
-
-        <motion.section 
-          className='tech-description'
-          initial='initial'
-          whileInView='animate'
-          >
-          
-          {ProjectData.project02.techstack.map((tech, index)=> {
-            return <motion.span
-                    id={theme}
-                    variants={fadeUpChild}
-                    key={index}
-                > {tech}</motion.span>
-
-          })} 
-
-        </motion.section>
-
-        </div>
-
+  
 
         <motion.section 
           className='next-project'
@@ -137,7 +147,7 @@ const Project02 = ({theme, navTheme, toggleTheme, word}) => {
             onMouseLeave={defaultState}
             
           >
-            <Link className="next-project-links"  id={theme} to="/project03">
+            <Link className="next-project-links"  id={theme} to="/project02">
                {text}
             </Link>
             

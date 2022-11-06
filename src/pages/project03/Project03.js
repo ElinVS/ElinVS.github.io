@@ -26,7 +26,7 @@ const Project03 = ({theme, navTheme, toggleTheme,word}) => {
           <motion.p
             variants={fadeUpChild}
             id={theme}
-          > {ProjectData.Project03.title }</motion.p>
+          > {ProjectData.project03.title }</motion.p>
 
         </motion.header>
 
