@@ -36,30 +36,6 @@ const Contact = ({theme}) => {
           
         >
 
-
-{/* <motion.svg 
-
-  whileHover={{y:40}}
-  transition={{type:'spring'}}
-  initial="hidden"
-  whileInView="visible"
-  xmlns="http://www.w3.org/2000/svg" 
-  fill="none" 
-  viewBox="0 0 24 24" 
-  stroke-width="0.2" 
-  stroke="currentColor" 
-  class="w-6 h-6">
-  <motion.path 
-  variants={draw}
-  stroke-linecap="round" 
-  stroke-linejoin="round" 
-  d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-</motion.svg> */}
-
-
-
-
-
     
           <motion.svg 
             id={theme}
@@ -95,7 +71,7 @@ const Contact = ({theme}) => {
           <motion.p
               whileHover={{x:10}}
               transition={{type:'tween'}}
-          > <a id={theme} href='https://www.linkedin.com/in/elin-svennberg-331605108/' target='_blank'>linkedin</a></motion.p>
+          > <a id={theme} href='https://www.linkedin.com/in/elin-svennberg-331605108/' target='_blank' rel="noreferrer">linkedin</a></motion.p>
     
         </div>
         

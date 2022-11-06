@@ -1,20 +1,19 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom"
 import {motion} from 'framer-motion'
-import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild } from '../../animations/Variants'
+import { draw, fadeInLeft, fadeInLeftChild, fadeUpChild } from '../../animations/Variants'
 import './style.css'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 import Footer from '../../components/footer/Footer'
 import mcgif from '../../assets/project01/MC_02.gif'
-import p1images from '../../assets/project01/p1images'
 import bio from '../../assets/project01/bio.png'
 import contact from '../../assets/project01/contact.png'
 import intro from '../../assets/project01/intro.png'
 import releases from '../../assets/project01/releases.png'
 import socials from '../../assets/project01/socials.png'
 import requiem from '../../assets/project01/requiem.png'
-import thirdmind2 from '../../assets/project01/thirdmind2.png'
+
 
 
 const Project01 = ({theme, navTheme, toggleTheme, word}) => {
@@ -57,8 +56,7 @@ const Project01 = ({theme, navTheme, toggleTheme, word}) => {
         <div className='parent'>
 
         <div className='description-details'>
-        <p id={theme} >website here</p>
-        <p >  <a id={theme} href='https://github.com/ElinVS/mc_website' target='_blank'>2022 / github</a> </p>
+        <p >  <a id={theme} href='https://github.com/ElinVS/mc_website' target='_blank' rel="noreferrer">2022 / github</a> </p>
         
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../homepage/style.css'
-// import Navbar from '../../components/navbar/Navbar';
+
 import NavBarHome from '../../components/navbarHome/NavBarHome'
 import Header from '../../components/header/Header'
 import Title from '../../components/jobtitle/Title'
@@ -20,8 +20,6 @@ const HomePage = ({text, titletext, theme, navTheme, word, setWord, toggleTheme}
 
         <section className='home-page' id={theme}>
           <NavBarHome navTheme={navTheme} toggleTheme={toggleTheme} word={word} />
-        
-          {/* <Navbar/> */}
           <Header text="elin svennberg " theme={theme} />
           <Title titletext="creative developer" theme={theme} />
           <Work theme={theme} />

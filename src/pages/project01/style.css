@@ -12,6 +12,7 @@
 }
 .project03-page{
     min-height: 100vh;
+    padding: 2em 3em 3em 3em;
 }
 
 /*  */
@@ -106,7 +107,7 @@
             grid-area: 1 / 2 / 2 / 4; 
             
             display:flex;
-            flex-direction: row;
+            flex-flow: wrap;
             justify-content: space-between;
             align-items: center;  
             
@@ -289,7 +290,7 @@ html{
 
     .image-div { 
  
-        height:55vh;
+        height:30vh;
         width:100%;
        
     }

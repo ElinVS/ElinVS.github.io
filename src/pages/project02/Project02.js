@@ -2,10 +2,18 @@ import React, {useState} from 'react'
 import '../project01/style.css'
 import { Link } from "react-router-dom"
 import {motion} from 'framer-motion'
-import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild } from '../../animations/Variants'
+import { draw, fadeInLeft, fadeInLeftChild, fadeUpChild } from '../../animations/Variants'
 import { ProjectData } from '../ProjectData'
 import NavbarProject from '../../components/projects/navbar/NavbarProject'
 import Footer from '../../components/footer/Footer'
+import breathe from '../../assets/project02/breathe.png'
+import breathewater from '../../assets/project02/breathewater.png'
+import bubble from '../../assets/project02/bubble.png'
+import colour from '../../assets/project02/colour.png'
+import homepage from '../../assets/project02/homepage.png'
+import journal from '../../assets/project02/journal.png'
+import msgif from '../../assets/project02/Mindspace_01.gif'
+
 
 
 const Project02 = ({theme, navTheme, toggleTheme, word}) => {
@@ -50,8 +58,8 @@ const Project02 = ({theme, navTheme, toggleTheme, word}) => {
         <div className='parent'>
 
         <div className='description-details'>
-        <p id={theme} >website here</p>
-        <p >  <a id={theme} href='https://github.com/ElinVS/mc_website' target='_blank'>2022 / github</a> </p>
+        
+        <p >  <a id={theme} href='https://github.com/ElinVS/MindSpace' target='_blank' rel="noreferrer">2022 / github</a> </p>
         
         </div>
 
@@ -98,33 +106,33 @@ const Project02 = ({theme, navTheme, toggleTheme, word}) => {
           <motion.div 
             className='image-div'
           >
-            <img src={mcgif} alt="gif of website"  />
+            <img src={msgif} alt="gif of website"  />
           </motion.div>
 
           <motion.div 
           className='image-div'
-          > <img src={bio} alt="gif of website" />
+          > <img src={breathe} alt="gif of website" />
           </motion.div>
           <motion.div 
           className='image-div'
-          ><img src={intro} alt="gif of website" />
+          ><img src={breathewater} alt="gif of website" />
             
           </motion.div>
           <motion.div 
           className='image-div'
-          ><img src={socials} alt="gif of website" /></motion.div>
+          ><img src={journal} alt="gif of website" /></motion.div>
           
           <motion.div 
           className='image-div'
-          ><img src={requiem} alt="gif of website" /></motion.div>
+          ><img src={colour} alt="gif of website" /></motion.div>
           
           <motion.div 
           className='image-div'
-          ><img src={releases} alt="gif of website" /></motion.div>
+          ><img src={homepage} alt="gif of website" /></motion.div>
           
           <motion.div 
           className='image-div'
-          ><img src={contact} alt="gif of website" /></motion.div>
+          ><img src={bubble} alt="gif of website" /></motion.div>
           
          
         </motion.div>
@@ -147,7 +155,7 @@ const Project02 = ({theme, navTheme, toggleTheme, word}) => {
             onMouseLeave={defaultState}
             
           >
-            <Link className="next-project-links"  id={theme} to="/project02">
+            <Link className="next-project-links"  id={theme} to="/project03">
                {text}
             </Link>
             

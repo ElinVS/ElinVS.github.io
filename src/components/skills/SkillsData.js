@@ -14,23 +14,19 @@ Interpersonal: [
     "Agile",
     "Collaboration",
     "Leadership",
-    "Co-ordination",
+    "Coordination",
     "Training",
-    "Design"
+    "problem solving"
 
 ],
 
-
-
-    Extra: [
-        'Swedish',
-        'English',
-        'Icelandic',
-        'Figma',
-        'git & github',
-        'vscode',
-        'trello'
-
-        
+Extra: [
+    'Swedish',
+    'English',
+    'Icelandic',
+    'Figma',
+    'git & github',
+    'vscode',
+    'trello'
     ]
 }

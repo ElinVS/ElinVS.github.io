@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {Link} from "react-router-dom"
 import {motion} from 'framer-motion'
 import '../work/style.css'
-import { fadeUp,fadeUpChild } from '../../animations/Variants'
+
 
 
 
@@ -67,7 +67,7 @@ const Work = ({theme}) => {
           transition={{type:'tween'}}
           >
             <p  id={theme}>matthew collings</p> 
-            <span className="feature-text"  id={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <span className="feature-text"  id={theme}>Website for Edinburgh based musicians Matthew Collings </span>
             <p  id={theme}> 01 </p>  
           </motion.div> 
         </Link>
@@ -81,7 +81,7 @@ const Work = ({theme}) => {
           transition={{type:'tween'}}
           >
             <p  id={theme}>mind space</p> 
-            <span className="feature-text"  id={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <span className="feature-text"  id={theme}>A web application hosting a variety of activities for people suffering from stress or anxiety </span>
             <p  id={theme}> 02 </p>  
           </motion.div>
         </Link>
@@ -95,7 +95,7 @@ const Work = ({theme}) => {
           transition={{type:'tween'}}
           >
             <p  id={theme}>erik</p> 
-            <span className="feature-text"  id={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan facilisis quam, in tristique lorem. Fusce consequat nisi in nisl elementum bibendum. </span>
+            <span className="feature-text"  id={theme}>An educational support app for students enrolled in the 16 week immersive Software Development course at CodeClan, a digital skills academy based in Scotland </span>
             <p id={theme}> 03 </p>  
           </motion.div>
         </Link>

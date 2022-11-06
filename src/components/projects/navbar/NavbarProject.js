@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import {motion} from 'framer-motion'
-import { draw, fadeInLeft, fadeInLeftChild, fadeUp, fadeUpChild, moveDown } from '../../../animations/Variants'
+import { moveDown } from '../../../animations/Variants'
 import '../../projects/navbar/style.css'
 
 
@@ -32,7 +32,6 @@ const NavbarProject = ({navTheme,toggleTheme, word}) => {
                 <span id={navTheme} onClick={toggleTheme}> {word} </span> 
 
 
-                {/* <span className="project-links" id={navTheme}>project :</span> */}
                 <Link className="project-links" id={navTheme} to="/project01" > 01 </Link>
                 <Link className="project-links" id={navTheme} to="/project02" > 02 </Link>
                 <Link className="project-links" id={navTheme} to="/project03" > 03 </Link>
